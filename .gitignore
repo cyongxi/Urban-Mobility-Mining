@@ -15,3 +15,6 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/
+# External datasets (stored locally)
+data/external/*
+!data/external/.gitkeep
