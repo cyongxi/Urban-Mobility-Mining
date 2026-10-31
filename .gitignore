@@ -1,18 +1,17 @@
-# Datasets
+
+# Data files
 data/raw/
 data/processed/
-data/external/
+*.parquet
 
 # Python
+.venv/
 __pycache__/
 *.pyc
-.venv/
 .env
-.ipynb_checkpoints/
 
 # macOS
 .DS_Store
 
-# Model artifacts
-*.pkl
-*.joblib
+# Jupyter
+.ipynb_checkpoints/
