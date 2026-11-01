@@ -125,8 +125,8 @@ LocationID,Borough,Zone,pickup_count
 205,Queens,Saint Albans,15610
 77,Brooklyn,East New York/Pennsylvania Avenue,14976
 258,Queens,Woodhaven,14863
-28,Queens,Briarwood/Jamaica Hills,14562
 55,Brooklyn,Coney Island,14562
+28,Queens,Briarwood/Jamaica Hills,14562
 106,Brooklyn,Gowanus,14496
 196,Queens,Rego Park,14111
 51,Bronx,Co-Op City,13901
@@ -257,5 +257,5 @@ LocationID,Borough,Zone,pickup_count
 204,Staten Island,Rossville/Woodrow,29
 5,Staten Island,Arden Heights,20
 199,Bronx,Rikers Island,18
-105,Manhattan,Governor's Island/Ellis Island/Liberty Island,7
 99,Staten Island,Freshkills Park,7
+105,Manhattan,Governor's Island/Ellis Island/Liberty Island,7

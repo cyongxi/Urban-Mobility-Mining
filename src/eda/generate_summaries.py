@@ -1,7 +1,7 @@
 """Create EDA summary tables from the shared 2025 cleaned taxi data.
 
 Run from the repository root:
-    python src/network_mining/eda_summary.py
+    python src/eda/generate_summaries.py
 
 All individual trip records remain local. Only aggregated
 EDA summaries are generated.
