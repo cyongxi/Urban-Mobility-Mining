@@ -62,10 +62,12 @@ save_fig("01_monthly_demand.png")
 hourly = pd.read_csv(TABLE_DIR / "hour_weekday.csv")
 
 hour_avg = (
-    hourly.groupby("hour")["avg_pickups"]
+    hourly.groupby("hour", as_index=False)["pickup_count"]
     .sum()
-    .div(7)
-    .reset_index(name="avg_pickups")
+)
+
+hour_avg["avg_pickups"] = (
+    hour_avg["pickup_count"] / 365
 )
 
 fig, ax = plt.subplots(figsize=(10, 5))
