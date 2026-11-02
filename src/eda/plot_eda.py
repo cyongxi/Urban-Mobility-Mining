@@ -234,4 +234,53 @@ ax.set_ylabel("Origin → Destination")
 
 save_fig("06_top_od_flows.png")
 
+
+# -------------------------------------------------
+# EDA 07 — Top 10 OD flows (proposal version)
+# -------------------------------------------------
+
+# 'od' has already been filtered to remove self-loops
+# in EDA 06, and 'lookup' contains taxi zone names.
+
+top_od_10 = (
+    od.nlargest(10, "trip_count")
+    .sort_values("trip_count")
+    .copy()
+)
+
+# Convert zone IDs into readable route labels.
+top_od_10["route"] = (
+    top_od_10["origin"].map(lookup).fillna(
+        top_od_10["origin"].astype(str)
+    )
+    + " → "
+    + top_od_10["destination"].map(lookup).fillna(
+        top_od_10["destination"].astype(str)
+    )
+)
+
+fig, ax = plt.subplots(figsize=(9, 5.5))
+
+sns.barplot(
+    data=top_od_10,
+    x="trip_count",
+    y="route",
+    color="slateblue",
+    ax=ax,
+)
+
+ax.set_title(
+    "Top 10 Inter-Zone Taxi OD Flows — 2025",
+    fontsize=12,
+    fontweight="bold",
+)
+
+ax.set_xlabel("Number of Trips", fontsize=10)
+ax.set_ylabel("Origin → Destination", fontsize=10)
+ax.tick_params(axis="y", labelsize=8)
+ax.tick_params(axis="x", labelsize=9)
+
+save_fig("07_top_10_od_flows.png")
+
+
 print("All EDA figures generated.")
