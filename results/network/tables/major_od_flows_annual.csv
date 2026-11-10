@@ -1,0 +1,21 @@
+origin,destination,trip_count,origin_name,destination_name
+237,236,296166,Upper East Side South,Upper East Side North
+236,237,253925,Upper East Side North,Upper East Side South
+161,237,140693,Midtown Center,Upper East Side South
+237,161,131134,Upper East Side South,Midtown Center
+161,236,113569,Midtown Center,Upper East Side North
+237,162,105359,Upper East Side South,Midtown East
+142,239,103584,Lincoln Square East,Upper West Side South
+239,238,100841,Upper West Side South,Upper West Side North
+239,142,100494,Upper West Side South,Lincoln Square East
+236,161,99544,Upper East Side North,Midtown Center
+141,236,95484,Lenox Hill West,Upper East Side North
+186,230,95415,Penn Station/Madison Sq West,Times Sq/Theatre District
+237,141,89451,Upper East Side South,Lenox Hill West
+236,141,88962,Upper East Side North,Lenox Hill West
+162,237,88159,Midtown East,Upper East Side South
+132,230,87067,JFK Airport,Times Sq/Theatre District
+238,239,86603,Upper West Side North,Upper West Side South
+236,239,83750,Upper East Side North,Upper West Side South
+161,234,82953,Midtown Center,Union Sq
+142,237,81943,Lincoln Square East,Upper East Side South

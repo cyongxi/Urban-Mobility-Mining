@@ -1,0 +1,4 @@
+period,n_seeds,n_active_nodes,mean_pairwise_seed_ari,min_pairwise_seed_ari
+annual,5,261,0.9091322805229011,0.8463434003707501
+weekday,5,261,1.0,1.0
+weekend,5,260,0.7387128215675252,0.5667761888328092

@@ -1,0 +1,21 @@
+origin,destination,trip_count,origin_name,destination_name
+237,236,54990,Upper East Side South,Upper East Side North
+236,237,47276,Upper East Side North,Upper East Side South
+249,79,29569,West Village,East Village
+239,142,28578,Upper West Side South,Lincoln Square East
+142,239,27908,Lincoln Square East,Upper West Side South
+79,170,26596,East Village,Murray Hill
+239,238,26017,Upper West Side South,Upper West Side North
+48,68,24946,Clinton East,East Chelsea
+79,107,24713,East Village,Gramercy
+186,230,24238,Penn Station/Madison Sq West,Times Sq/Theatre District
+79,249,24198,East Village,West Village
+161,237,23335,Midtown Center,Upper East Side South
+132,230,23252,JFK Airport,Times Sq/Theatre District
+238,239,22521,Upper West Side North,Upper West Side South
+237,161,22394,Upper East Side South,Midtown Center
+230,186,22205,Times Sq/Theatre District,Penn Station/Madison Sq West
+79,148,21874,East Village,Lower East Side
+263,141,21780,Yorkville West,Lenox Hill West
+141,236,21514,Lenox Hill West,Upper East Side North
+148,79,20726,Lower East Side,East Village

@@ -1,0 +1,261 @@
+zone_id,weekday_community,weekend_community,weekend_aligned_to_weekday,changed_community,Borough,Zone
+1,0,0,0,False,EWR,Newark Airport
+2,1,1,1,False,Queens,Jamaica Bay
+3,1,1,1,False,Bronx,Allerton/Pelham Gardens
+4,0,0,0,False,Manhattan,Alphabet City
+5,1,1,1,False,Staten Island,Arden Heights
+6,1,1,1,False,Staten Island,Arrochar/Fort Wadsworth
+7,1,1,1,False,Queens,Astoria
+8,1,1,1,False,Queens,Astoria Park
+9,1,1,1,False,Queens,Auburndale
+10,1,1,1,False,Queens,Baisley Park
+11,1,1,1,False,Brooklyn,Bath Beach
+12,0,0,0,False,Manhattan,Battery Park
+13,0,0,0,False,Manhattan,Battery Park City
+14,1,1,1,False,Brooklyn,Bay Ridge
+15,1,1,1,False,Queens,Bay Terrace/Fort Totten
+16,1,1,1,False,Queens,Bayside
+17,1,1,1,False,Brooklyn,Bedford
+18,1,1,1,False,Bronx,Bedford Park
+19,1,1,1,False,Queens,Bellerose
+20,1,1,1,False,Bronx,Belmont
+21,1,1,1,False,Brooklyn,Bensonhurst East
+22,1,1,1,False,Brooklyn,Bensonhurst West
+23,1,1,1,False,Staten Island,Bloomfield/Emerson Hill
+24,2,2,2,False,Manhattan,Bloomingdale
+25,1,1,1,False,Brooklyn,Boerum Hill
+26,1,1,1,False,Brooklyn,Borough Park
+27,1,1,1,False,Queens,Breezy Point/Fort Tilden/Riis Beach
+28,1,1,1,False,Queens,Briarwood/Jamaica Hills
+29,1,1,1,False,Brooklyn,Brighton Beach
+30,1,1,1,False,Queens,Broad Channel
+31,1,1,1,False,Bronx,Bronx Park
+32,1,1,1,False,Bronx,Bronxdale
+33,1,1,1,False,Brooklyn,Brooklyn Heights
+34,1,1,1,False,Brooklyn,Brooklyn Navy Yard
+35,1,1,1,False,Brooklyn,Brownsville
+36,1,1,1,False,Brooklyn,Bushwick North
+37,1,1,1,False,Brooklyn,Bushwick South
+38,1,1,1,False,Queens,Cambria Heights
+39,1,1,1,False,Brooklyn,Canarsie
+40,1,1,1,False,Brooklyn,Carroll Gardens
+41,2,2,2,False,Manhattan,Central Harlem
+42,2,2,2,False,Manhattan,Central Harlem North
+43,2,2,2,False,Manhattan,Central Park
+44,1,1,1,False,Staten Island,Charleston/Tottenville
+45,0,0,0,False,Manhattan,Chinatown
+46,1,1,1,False,Bronx,City Island
+47,1,1,1,False,Bronx,Claremont/Bathgate
+48,2,2,2,False,Manhattan,Clinton East
+49,1,1,1,False,Brooklyn,Clinton Hill
+50,2,2,2,False,Manhattan,Clinton West
+51,1,1,1,False,Bronx,Co-Op City
+52,1,1,1,False,Brooklyn,Cobble Hill
+53,1,1,1,False,Queens,College Point
+54,1,1,1,False,Brooklyn,Columbia Street
+55,1,1,1,False,Brooklyn,Coney Island
+56,1,1,1,False,Queens,Corona
+57,1,1,1,False,Queens,Corona
+58,1,1,1,False,Bronx,Country Club
+59,1,1,1,False,Bronx,Crotona Park
+60,1,1,1,False,Bronx,Crotona Park East
+61,1,1,1,False,Brooklyn,Crown Heights North
+62,1,1,1,False,Brooklyn,Crown Heights South
+63,1,1,1,False,Brooklyn,Cypress Hills
+64,1,1,1,False,Queens,Douglaston
+65,1,1,1,False,Brooklyn,Downtown Brooklyn/MetroTech
+66,1,1,1,False,Brooklyn,DUMBO/Vinegar Hill
+67,1,1,1,False,Brooklyn,Dyker Heights
+68,0,0,0,False,Manhattan,East Chelsea
+69,1,1,1,False,Bronx,East Concourse/Concourse Village
+70,1,1,1,False,Queens,East Elmhurst
+71,1,1,1,False,Brooklyn,East Flatbush/Farragut
+72,1,1,1,False,Brooklyn,East Flatbush/Remsen Village
+73,1,1,1,False,Queens,East Flushing
+74,2,2,2,False,Manhattan,East Harlem North
+75,2,2,2,False,Manhattan,East Harlem South
+76,1,1,1,False,Brooklyn,East New York
+77,1,1,1,False,Brooklyn,East New York/Pennsylvania Avenue
+78,1,1,1,False,Bronx,East Tremont
+79,0,0,0,False,Manhattan,East Village
+80,1,1,1,False,Brooklyn,East Williamsburg
+81,1,1,1,False,Bronx,Eastchester
+82,1,1,1,False,Queens,Elmhurst
+83,1,1,1,False,Queens,Elmhurst/Maspeth
+84,1,1,1,False,Staten Island,Eltingville/Annadale/Prince's Bay
+85,1,1,1,False,Brooklyn,Erasmus
+86,1,1,1,False,Queens,Far Rockaway
+87,0,0,0,False,Manhattan,Financial District North
+88,0,0,0,False,Manhattan,Financial District South
+89,1,1,1,False,Brooklyn,Flatbush/Ditmas Park
+90,0,0,0,False,Manhattan,Flatiron
+91,1,1,1,False,Brooklyn,Flatlands
+92,1,1,1,False,Queens,Flushing
+93,1,1,1,False,Queens,Flushing Meadows-Corona Park
+94,1,1,1,False,Bronx,Fordham South
+95,1,1,1,False,Queens,Forest Hills
+96,1,1,1,False,Queens,Forest Park/Highland Park
+97,1,1,1,False,Brooklyn,Fort Greene
+98,1,1,1,False,Queens,Fresh Meadows
+99,0,1,1,True,Staten Island,Freshkills Park
+100,0,0,0,False,Manhattan,Garment District
+101,1,1,1,False,Queens,Glen Oaks
+102,1,1,1,False,Queens,Glendale
+105,0,0,0,False,Manhattan,Governor's Island/Ellis Island/Liberty Island
+106,1,1,1,False,Brooklyn,Gowanus
+107,0,0,0,False,Manhattan,Gramercy
+108,1,1,1,False,Brooklyn,Gravesend
+109,1,1,1,False,Staten Island,Great Kills
+111,1,1,1,False,Brooklyn,Green-Wood Cemetery
+112,1,1,1,False,Brooklyn,Greenpoint
+113,0,0,0,False,Manhattan,Greenwich Village North
+114,0,0,0,False,Manhattan,Greenwich Village South
+115,1,1,1,False,Staten Island,Grymes Hill/Clifton
+116,2,2,2,False,Manhattan,Hamilton Heights
+117,1,1,1,False,Queens,Hammels/Arverne
+118,1,1,1,False,Staten Island,Heartland Village/Todt Hill
+119,1,1,1,False,Bronx,Highbridge
+120,2,2,2,False,Manhattan,Highbridge Park
+121,1,1,1,False,Queens,Hillcrest/Pomonok
+122,1,1,1,False,Queens,Hollis
+123,1,1,1,False,Brooklyn,Homecrest
+124,1,1,1,False,Queens,Howard Beach
+125,0,0,0,False,Manhattan,Hudson Sq
+126,1,1,1,False,Bronx,Hunts Point
+127,2,2,2,False,Manhattan,Inwood
+128,2,2,2,False,Manhattan,Inwood Hill Park
+129,1,1,1,False,Queens,Jackson Heights
+130,1,1,1,False,Queens,Jamaica
+131,1,1,1,False,Queens,Jamaica Estates
+132,1,1,1,False,Queens,JFK Airport
+133,1,1,1,False,Brooklyn,Kensington
+134,1,1,1,False,Queens,Kew Gardens
+135,1,1,1,False,Queens,Kew Gardens Hills
+136,1,1,1,False,Bronx,Kingsbridge Heights
+137,0,0,0,False,Manhattan,Kips Bay
+138,1,1,1,False,Queens,LaGuardia Airport
+139,1,1,1,False,Queens,Laurelton
+140,2,2,2,False,Manhattan,Lenox Hill East
+141,2,2,2,False,Manhattan,Lenox Hill West
+142,2,2,2,False,Manhattan,Lincoln Square East
+143,2,2,2,False,Manhattan,Lincoln Square West
+144,0,0,0,False,Manhattan,Little Italy/NoLiTa
+145,1,1,1,False,Queens,Long Island City/Hunters Point
+146,1,1,1,False,Queens,Long Island City/Queens Plaza
+147,1,1,1,False,Bronx,Longwood
+148,0,0,0,False,Manhattan,Lower East Side
+149,1,1,1,False,Brooklyn,Madison
+150,1,1,1,False,Brooklyn,Manhattan Beach
+151,2,2,2,False,Manhattan,Manhattan Valley
+152,2,2,2,False,Manhattan,Manhattanville
+153,1,1,1,False,Manhattan,Marble Hill
+154,1,1,1,False,Brooklyn,Marine Park/Floyd Bennett Field
+155,1,1,1,False,Brooklyn,Marine Park/Mill Basin
+156,1,1,1,False,Staten Island,Mariners Harbor
+157,1,1,1,False,Queens,Maspeth
+158,0,0,0,False,Manhattan,Meatpacking/West Village West
+159,1,1,1,False,Bronx,Melrose South
+160,1,1,1,False,Queens,Middle Village
+161,2,2,2,False,Manhattan,Midtown Center
+162,2,2,2,False,Manhattan,Midtown East
+163,2,2,2,False,Manhattan,Midtown North
+164,0,0,0,False,Manhattan,Midtown South
+165,1,1,1,False,Brooklyn,Midwood
+166,2,2,2,False,Manhattan,Morningside Heights
+167,1,1,1,False,Bronx,Morrisania/Melrose
+168,1,1,1,False,Bronx,Mott Haven/Port Morris
+169,1,1,1,False,Bronx,Mount Hope
+170,0,0,0,False,Manhattan,Murray Hill
+171,1,1,1,False,Queens,Murray Hill-Queens
+172,1,1,1,False,Staten Island,New Dorp/Midland Beach
+173,1,1,1,False,Queens,North Corona
+174,1,1,1,False,Bronx,Norwood
+175,1,1,1,False,Queens,Oakland Gardens
+176,1,1,1,False,Staten Island,Oakwood
+177,1,1,1,False,Brooklyn,Ocean Hill
+178,1,1,1,False,Brooklyn,Ocean Parkway South
+179,1,1,1,False,Queens,Old Astoria
+180,1,1,1,False,Queens,Ozone Park
+181,1,1,1,False,Brooklyn,Park Slope
+182,1,1,1,False,Bronx,Parkchester
+183,1,1,1,False,Bronx,Pelham Bay
+184,1,1,1,False,Bronx,Pelham Bay Park
+185,1,1,1,False,Bronx,Pelham Parkway
+186,0,0,0,False,Manhattan,Penn Station/Madison Sq West
+187,1,1,1,False,Staten Island,Port Richmond
+188,1,1,1,False,Brooklyn,Prospect-Lefferts Gardens
+189,1,1,1,False,Brooklyn,Prospect Heights
+190,1,1,1,False,Brooklyn,Prospect Park
+191,1,1,1,False,Queens,Queens Village
+192,1,1,1,False,Queens,Queensboro Hill
+193,1,1,1,False,Queens,Queensbridge/Ravenswood
+194,1,1,1,False,Manhattan,Randalls Island
+195,1,1,1,False,Brooklyn,Red Hook
+196,1,1,1,False,Queens,Rego Park
+197,1,1,1,False,Queens,Richmond Hill
+198,1,1,1,False,Queens,Ridgewood
+199,1,1,1,False,Bronx,Rikers Island
+200,2,2,2,False,Bronx,Riverdale/North Riverdale/Fieldston
+201,1,1,1,False,Queens,Rockaway Park
+202,1,1,1,False,Manhattan,Roosevelt Island
+203,1,1,1,False,Queens,Rosedale
+204,1,1,1,False,Staten Island,Rossville/Woodrow
+205,1,1,1,False,Queens,Saint Albans
+206,1,1,1,False,Staten Island,Saint George/New Brighton
+207,1,1,1,False,Queens,Saint Michaels Cemetery/Woodside
+208,1,1,1,False,Bronx,Schuylerville/Edgewater Park
+209,0,0,0,False,Manhattan,Seaport
+210,1,1,1,False,Brooklyn,Sheepshead Bay
+211,0,0,0,False,Manhattan,SoHo
+212,1,1,1,False,Bronx,Soundview/Bruckner
+213,1,1,1,False,Bronx,Soundview/Castle Hill
+214,1,1,1,False,Staten Island,South Beach/Dongan Hills
+215,1,1,1,False,Queens,South Jamaica
+216,1,1,1,False,Queens,South Ozone Park
+217,1,1,1,False,Brooklyn,South Williamsburg
+218,1,1,1,False,Queens,Springfield Gardens North
+219,1,1,1,False,Queens,Springfield Gardens South
+220,2,1,1,True,Bronx,Spuyten Duyvil/Kingsbridge
+221,1,1,1,False,Staten Island,Stapleton
+222,1,1,1,False,Brooklyn,Starrett City
+223,1,1,1,False,Queens,Steinway
+224,0,0,0,False,Manhattan,Stuy Town/Peter Cooper Village
+225,1,1,1,False,Brooklyn,Stuyvesant Heights
+226,1,1,1,False,Queens,Sunnyside
+227,1,1,1,False,Brooklyn,Sunset Park East
+228,1,1,1,False,Brooklyn,Sunset Park West
+229,2,2,2,False,Manhattan,Sutton Place/Turtle Bay North
+230,0,0,0,False,Manhattan,Times Sq/Theatre District
+231,0,0,0,False,Manhattan,TriBeCa/Civic Center
+232,0,0,0,False,Manhattan,Two Bridges/Seward Park
+233,0,0,0,False,Manhattan,UN/Turtle Bay South
+234,0,0,0,False,Manhattan,Union Sq
+235,1,1,1,False,Bronx,University Heights/Morris Heights
+236,2,2,2,False,Manhattan,Upper East Side North
+237,2,2,2,False,Manhattan,Upper East Side South
+238,2,2,2,False,Manhattan,Upper West Side North
+239,2,2,2,False,Manhattan,Upper West Side South
+240,1,1,1,False,Bronx,Van Cortlandt Park
+241,1,1,1,False,Bronx,Van Cortlandt Village
+242,1,1,1,False,Bronx,Van Nest/Morris Park
+243,2,2,2,False,Manhattan,Washington Heights North
+244,2,2,2,False,Manhattan,Washington Heights South
+245,1,1,1,False,Staten Island,West Brighton
+246,0,0,0,False,Manhattan,West Chelsea/Hudson Yards
+247,1,1,1,False,Bronx,West Concourse
+248,1,1,1,False,Bronx,West Farms/Bronx River
+249,0,0,0,False,Manhattan,West Village
+250,1,1,1,False,Bronx,Westchester Village/Unionport
+251,1,1,1,False,Staten Island,Westerleigh
+252,1,1,1,False,Queens,Whitestone
+253,1,1,1,False,Queens,Willets Point
+254,1,1,1,False,Bronx,Williamsbridge/Olinville
+255,1,1,1,False,Brooklyn,Williamsburg (North Side)
+256,1,1,1,False,Brooklyn,Williamsburg (South Side)
+257,1,1,1,False,Brooklyn,Windsor Terrace
+258,1,1,1,False,Queens,Woodhaven
+259,1,1,1,False,Bronx,Woodlawn/Wakefield
+260,1,1,1,False,Queens,Woodside
+261,0,0,0,False,Manhattan,World Trade Center
+262,2,2,2,False,Manhattan,Yorkville East
+263,2,2,2,False,Manhattan,Yorkville West
