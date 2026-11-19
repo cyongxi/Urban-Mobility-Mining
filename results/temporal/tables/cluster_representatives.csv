@@ -1,0 +1,5 @@
+zone_id,cluster_id,distance_to_centroid,Borough,Zone
+202,0,0.00877824706731498,Manhattan,Roosevelt Island
+220,0,0.011089508336212736,Bronx,Spuyten Duyvil/Kingsbridge
+61,0,0.011498660957271319,Brooklyn,Crown Heights North
+99,1,0.0,Staten Island,Freshkills Park
