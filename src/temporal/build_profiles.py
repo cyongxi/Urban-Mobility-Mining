@@ -23,7 +23,7 @@ FEATURE_COLS = [f"d{d}_h{h:02d}" for d in range(7) for h in range(24)]
 def exposure_days():
     dates = pd.date_range("2025-01-01", "2025-12-31", freq="D")
     dates = dates[~dates.isin(pd.to_datetime(EXCLUDE_DATES))]
-    counts = pd.Series(dates.dayofweek).value_counts()
+    counts = pd.Series(dates.day_of_week).value_counts()
     result = {d: int(counts.get(d, 0)) for d in range(7)}
     assert sum(result.values()) == 363
     return result
