@@ -1,50 +1,105 @@
-# SI 671 RQ2 — Sparsity sensitivity add-on
 
-From a clean working tree on `feature/temporal-clustering`, place
-`src/temporal/rq2_sparsity_sensitivity.py` into your repository (do not replace existing RQ2 files).
+# Urban Mobility Mining
 
-Fix the single deprecated Pandas alias in `src/temporal/build_profiles.py`:
+SI 671 Data Mining — Fall 2026
 
-```python
-counts = pd.Series(dates.day_of_week).value_counts()
-```
+## Project Overview
 
-The alias change does not alter the numerical result.
+This project analyzes 2025 NYC Yellow Taxi trips to
+study spatial mobility communities, temporal demand
+patterns, and the incremental value of historical
+network features for hourly demand forecasting.
 
-Run from the repository root, after the original `build_profiles.py` has generated its tables:
+## Research Questions
 
-```bash
-python -m src.temporal.rq2_sparsity_sensitivity
-```
+- RQ1: Mobility Communities
+- RQ2: Temporal Demand Profiles
+- RQ3: Incremental Predictive Value
+- RQ4: Heterogeneity of Predictive Gains
 
-This reuses existing 263x168 average Pickup Profile CSVs, not original trip-level parquet data. It fits separate PCA + K-means for each minimum included Pickup count (1/100/500/1000/5000). Each scenario saves tables to a separate directory, and the combined comparison lives in:
+## Data
 
-```
-results/temporal/sensitivity/rq2_sparsity_sensitivity_summary.csv
-```
+Source: NYC Taxi and Limousine Commission (TLC).
 
-The existing primary `results/temporal/tables` and `results/temporal/figures` are **never overwritten**. Do not consider K=2 with sizes 259+1 and silhouette .845 an interpretable clustering merely because the score is high. Review size balance, silhouette, stability, coverage, and actual profiles. If a scenario fails its >=5 minimum-cluster-size preference, label it as not yet suitable for substantive 'demand type' conclusions.
+The analysis uses 2025 Yellow Taxi trip records and
+the official TLC taxi-zone lookup.
 
-For figures from a scenario, use an existing helper:
+Raw and cleaned Parquet files are kept locally.
 
-```bash
-python - <<'PY'
-from pathlib import Path
-from src.temporal.plot_results import write_figures
-path = Path('results/temporal/sensitivity/min1000')
-write_figures(table_dir=path, fig_dir=path/'figures')
-PY
-```
+## RQ1: Network Mining
 
-For `results/temporal/sensitivity/min1000/`, the normal `plot_results.py` will read the sensitivity RQ1/RQ2 cross-tab if it was produced. The same geometry lookup logic applies for maps.
-
-Before pushing:
+Run from the repository root:
 
 ```bash
-python -m pytest tests/test_rq2_profiles.py -q
-git status --short
-git add src/temporal/rq2_sparsity_sensitivity.py src/temporal/build_profiles.py results/temporal/sensitivity/
-git diff --cached --stat
-git commit -m 'Add RQ2 sparse-zone sensitivity analysis and fix deprecated Pandas alias'
-git push origin feature/temporal-clustering
+python -m src.network.build_od_network
+python -m src.network.community_detection --resolution 1.0
+python -m src.network.plot_network
 ```
+
+Main results:
+
+- `results/network/tables/`
+- `results/network/figures/`
+
+The main Louvain resolution is gamma = 1.0.
+Additional resolution sensitivity results are retained
+as robustness diagnostics.
+
+## RQ2: Temporal Pattern Mining
+
+```bash
+python -m src.temporal.build_profiles --threads 4
+python -m src.temporal.cluster_profiles \
+  --min-pickups 1000 --variance 0.90
+python -m src.temporal.plot_results
+```
+
+Main results:
+
+- `results/temporal/tables/`
+- `results/temporal/figures/`
+
+The primary clustering uses a minimum of 1,000 annual
+pickups per zone. Alternative thresholds are available
+under `results/temporal/sensitivity/`.
+
+## Historical Network Features for RQ3
+
+```bash
+python -m src.network.network_features \
+  --window-hours 24 --threads 4
+
+python -m src.network.network_topology_features \
+  --window-hours 24 --threads 4
+```
+
+Features are aligned by `zone_id` and `feature_as_of`.
+For target hour t, only trips completed before t
+contribute to historical OD features.
+
+Generated Parquet files are stored locally under
+`data/processed/network_features/`.
+
+## Forecasting and Evaluation
+
+See notebooks 05–08 for forecasting baselines,
+network-feature ablation, and heterogeneity analyses.
+
+## Reproducibility
+
+Run the analysis in the `si671-urban` Python environment.
+Required inputs include the 12 cleaned monthly Parquet
+files and the official taxi-zone lookup.
+
+Run tests with:
+
+```bash
+python -m pytest tests/ -q
+```
+
+## Limitations
+
+The analysis covers Yellow Taxi trips rather than
+all urban mobility. Full-year clustering outputs are
+retrospective and must not be used as historical
+predictors for 2025 forecasting.

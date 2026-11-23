@@ -1,0 +1,14 @@
+community_id,Borough,n_zones,community_size,share_of_community
+0,EWR,1,9,0.1111111111111111
+0,Manhattan,8,9,0.8888888888888888
+1,Bronx,43,194,0.22164948453608246
+1,Brooklyn,61,194,0.31443298969072164
+1,Manhattan,2,194,0.010309278350515464
+1,Queens,69,194,0.3556701030927835
+1,Staten Island,19,194,0.0979381443298969
+2,Manhattan,23,23,1.0
+3,Manhattan,18,18,1.0
+4,Manhattan,4,4,1.0
+5,Manhattan,9,9,1.0
+6,Manhattan,2,2,1.0
+7,Manhattan,1,1,1.0

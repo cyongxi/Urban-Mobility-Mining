@@ -159,11 +159,23 @@ def plot_all(table_dir=TABLE_DIR, fig_dir=FIG_DIR, shape_file=SHAPEFILE):
                 gdf = geometry.merge(lab, left_on=key, right_on="zone_id", how="left",
                                      validate="one_to_one")
                 gdf = gdf.loc[~gdf[key].isin([264, 265])].copy()
+                gdf["community_label"] = gdf["plot_community"].map(
+                    lambda x: f"C{int(x)}" if pd.notna(x) else None
+                )
                 fig, ax = plt.subplots(figsize=(9, 9))
-                gdf.plot(column="plot_community", categorical=True, legend=True,
-                         cmap="tab20", vmin=0, vmax=max(max_label, max(remap.values())),
-                         linewidth=0.3, edgecolor="white",
-                         missing_kwds={"color": "lightgrey", "label": "No observed OD trips"}, ax=ax)
+                gdf.plot(
+                    column="community_label",
+                    categorical=True,
+                    legend=True,
+                    cmap="tab20",
+                    linewidth=0.3,
+                    edgecolor="white",
+                    missing_kwds={
+                        "color": "lightgrey",
+                        "label": "No observed OD trips",
+                    },
+                    ax=ax,
+                )
                 ax.set_title(f"2025 {period.title()} Louvain Communities\n"
                              "Colors aligned to annual community partition")
                 ax.set_axis_off()
