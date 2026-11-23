@@ -1,0 +1,23 @@
+{
+  "year": 2025,
+  "n_zones": 263,
+  "n_day_hour_features": 168,
+  "total_included_pickups": 48350453,
+  "days_by_weekday_monday_0": {
+    "0": 52,
+    "1": 52,
+    "2": 53,
+    "3": 52,
+    "4": 52,
+    "5": 52,
+    "6": 50
+  },
+  "excluded_dst_dates": [
+    "2025-03-09",
+    "2025-11-02"
+  ],
+  "filters": "cleaned pickup-valid; 2025 pickup timestamps; TLC zones except 264,265; no valid_od condition",
+  "raw": "mean pickup count per occurrence of given weekday/hour",
+  "normalized": "divide each 168D raw vector by its sum; zero vectors stay zero and are not clustered",
+  "time": "NYC naive local wall clock; DST dates excluded for descriptive clustering"
+}

@@ -1,0 +1,3 @@
+cluster_id,n_zones,median_annual_pickups,mean_annual_pickups,peak_day_of_week,peak_hour,weekend_share
+0,259,14041.0,186681.2586872587,5.0,23.0,0.3264512380741733
+1,1,7.0,7.0,6.0,18.0,0.578651685393

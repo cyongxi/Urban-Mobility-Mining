@@ -18,3 +18,20 @@ __pycache__/
 # External datasets (stored locally)
 data/external/*
 !data/external/.gitkeep
+
+
+# Local datasets
+data/raw/
+data/processed/
+data/external/*
+
+# Keep directory placeholder
+!data/external/.gitkeep
+
+# Large EDA intermediates
+results/eda/tables/od_flows.csv
+results/eda/tables/daily_demand.csv
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
