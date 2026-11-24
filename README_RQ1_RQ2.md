@@ -78,7 +78,7 @@ PY
 ## 3. PCA + K-means (main RQ2 results)
 
 ```bash
-python -m src.temporal.cluster_profiles --min-pickups 1 --variance 0.90
+python -m src.temporal.cluster_profiles --min-pickups 1000 --variance 0.90
 ```
 
 The method fits PCA on **row-normalized 168D shapes**, retains the minimum number of PCs with >=90% explained variance, then evaluates K-means K=2,...,8 using Silhouette **in the retained PCA space**. It prefers K with no clusters smaller than 5 zones; if none, uses highest silhouette and documents this. This is a heuristic for interpretability, not an official proposal requirement. It also measures K-means seed stability using ARI for seeds 42,...,46; outputs a raw-profile clustering as sensitivity; and compares annual RQ1 communities with RQ2 clusters using ARI/AMI and a cross-tab.
