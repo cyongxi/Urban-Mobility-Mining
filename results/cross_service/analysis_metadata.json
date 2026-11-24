@@ -1,0 +1,16 @@
+{
+  "month": "2025-06",
+  "services": [
+    "Yellow",
+    "Uber",
+    "Lyft"
+  ],
+  "uber_license": "HV0003",
+  "lyft_license": "HV0005",
+  "eligible_zones": "TLC lookup except IDs 264 and 265; EWR retained and labeled separately",
+  "yellow_input": "Existing pickup-valid cleaned Yellow Taxi monthly parquet; valid_od not required",
+  "hvfhv_input": "Official raw HVFHV monthly parquet, only HV0003/HV0005",
+  "time_aggregation": "pickup local datetime; Mon=0; hour=0..23; average by count of that weekday in month",
+  "normalization": "each service's 7x24 mean pickup vector divided by its sum",
+  "scope": "descriptive comparison only; not causal, annual, or forecast feature engineering"
+}
