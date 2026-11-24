@@ -1,26 +1,5 @@
 # SI 671 — Yiwu RQ1 + RQ2 continuation (2025 NYC Yellow Taxi)
 
-This patch is meant to be **unzipped at the existing `Urban-Mobility-Mining/` repo root**. It adds new files; it does **not** replace existing RQ1 or RQ3 code.
-
-## What was confirmed in GitHub
-
-`feature/network-topology-enhancement` contains the completed RQ1 annual/weekday/weekend OD graph, Louvain outputs, static features and time-safe historical features. No remote RQ2 implementation was visible as of 2026-11-19. Main branch is not yet fully integrated. The source of truth is the final submitted proposal: RQ2 uses `7*24=168` zone-specific weekday-hour pickup profiles, raw/normalized comparisons, PCA, K-means, silhouette and interpretable cluster means.
-
-## 0. New branch from the existing RQ1/network topology branch
-
-```bash
-conda activate si671-urban
-git status --short
-git fetch origin
-git switch feature/network-topology-enhancement
-git pull --ff-only origin feature/network-topology-enhancement
-git switch -c feature/temporal-clustering
-```
-
-**Stop if you have uncommitted changes** and commit/stash them first; if `feature/temporal-clustering` already exists locally, switch to it instead of creating it. The RQ2 branch will contain RQ1 as an ancestor. Submit a PR against the topology branch first, or first merge the topology branch to main and then retarget this RQ2 PR to main to avoid a confusing diff.
-
-Unzip the distribution archive at repo root (`-d .`), preserving paths.
-
 ## 1. Check data & run tests
 
 Inputs expected (from your existing local files):
