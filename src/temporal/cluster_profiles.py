@@ -180,7 +180,7 @@ def compare_rq1(rq2, community_file):
 
 
 def main(table_dir=OUTPUT_DIR, community_file=NETWORK_COMMUNITIES,
-         lookup_file=LOOKUP_FILE, min_pickups=1, variance=0.90):
+         lookup_file=LOOKUP_FILE, min_pickups=1000, variance=0.90):
     table_dir = Path(table_dir)
     raw = pd.read_csv(table_dir/"zone_profiles_raw.csv")
     norm = pd.read_csv(table_dir/"zone_profiles_normalized.csv")
@@ -209,7 +209,7 @@ if __name__ == "__main__":
     ap.add_argument("--table-dir", type=Path, default=OUTPUT_DIR)
     ap.add_argument("--community-file", type=Path, default=NETWORK_COMMUNITIES)
     ap.add_argument("--lookup-file", type=Path, default=LOOKUP_FILE)
-    ap.add_argument("--min-pickups", type=int, default=1)
+    ap.add_argument("--min-pickups", type=int, default=1000)
     ap.add_argument("--variance", type=float, default=0.90)
     args=ap.parse_args()
     main(args.table_dir,args.community_file,args.lookup_file,args.min_pickups,args.variance)

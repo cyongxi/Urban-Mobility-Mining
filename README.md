@@ -114,3 +114,18 @@ The analysis covers Yellow Taxi trips rather than
 all urban mobility. Full-year clustering outputs are
 retrospective and must not be used as historical
 predictors for 2025 forecasting.
+
+## Supplementary Cross-Service Comparison
+
+We conducted a June 2025 descriptive comparison of
+Yellow Taxi, Uber, and Lyft pickup patterns to examine
+the representativeness of Yellow Taxi mobility data.
+
+- Notebook: `notebooks/10_cross_service_comparison.ipynb`
+- Pipeline: `src/supplementary/cross_service_comparison.py`
+- Results: `results/cross_service/`
+- Instructions: `README_CROSS_SERVICE.md`
+
+The analysis compares spatial concentration and
+normalized weekday-hour demand profiles. It does not
+alter the RQ1–RQ4 forecasting pipeline.
