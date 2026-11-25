@@ -1,128 +1,84 @@
-# SI 671 — Yiwu RQ1 + RQ2 continuation (2025 NYC Yellow Taxi)
+# RQ1 / RQ2 — Mobility Communities and Temporal Demand Profiles
 
-## 1. Check data & run tests
+**Owner:** Yiwu Gu. **Downstream use:** historical OD features for RQ3; RQ1 communities and RQ2 clusters as evaluation groupings in RQ4.
 
-Inputs expected (from your existing local files):
+All commands run from the repository root in the `si671-urban` environment (`environment.yml`).
 
-- `data/processed/cleaned_trips/cleaned_2025-01.parquet` through `cleaned_2025-12.parquet`
+## Required local inputs (not in Git)
+
+- `data/processed/cleaned_trips/cleaned_2025-01.parquet` … `cleaned_2025-12.parquet`
 - `data/external/taxi_zone_lookup.csv`
-- `results/network/tables/od_annual_all.csv`, `od_weekday_all.csv`, `od_weekend_all.csv`, `communities_annual.csv` (from RQ1)
-- `data/external/**/taxi_zones.shp` (optional, for geographic map)
+- `data/external/**/taxi_zones.shp` (optional; only needed for the zone maps)
+
+## Tests
 
 ```bash
-python -m pip install duckdb pyarrow pandas numpy scipy scikit-learn matplotlib networkx geopandas pytest
-python -m pytest tests/test_rq2_profiles.py tests/test_network_rq1.py -q
+python -m pytest tests/test_network_rq1.py tests/test_rq2_profiles.py -q
 ```
 
-## 2. Build the 168D profiles
+## RQ1 — Weighted OD networks and Louvain communities
+
+```bash
+python -m src.network.build_od_network
+python -m src.network.community_detection --resolution 1.0
+python -m src.network.plot_network
+python -m src.network.rq1_resolution_sensitivity   # optional robustness
+```
+
+**Design.** Directed graphs G_t = (V, E_t, W_t) for three predefined periods (annual, weekday, weekend), with w_ij,t = quality-filtered trips from zone i to zone j. Zones 264/265 are excluded. Network statistics (weighted in/out strength, density, top-k and top-1% edge shares, edge HHI) use the directed graph. For Louvain, flows are symmetrized as w_ij + w_ji and self-loops are dropped; the main resolution is γ = 1.0.
+
+**Robustness.** Louvain seed stability (5 seeds); resolution sensitivity for γ ∈ {0.5, 1, 1.5, 2}, reporting both Q at the chosen γ and Q re-evaluated at γ = 1 so values are comparable. Sensitivity runs write separate files and never overwrite the main outputs.
+
+**Key results** (`results/network/tables/`):
+
+| Period | Interzone trips | Communities | Modularity | Within-community share | Top-1% edge share |
+|---|---|---|---|---|---|
+| Annual | 45.6M | 3 | 0.220 | 61.4% | 47.1% |
+| Weekday | 32.5M | 3 | 0.216 | 61.4% | 48.3% |
+| Weekend | 13.1M | 3 | 0.225 | 61.3% | 40.6% |
+
+Weekday and weekend partitions are nearly identical (ARI = 0.97, 2 of 260 zones change), while weekend flows are less concentrated. Annual communities: two Manhattan communities (34 and 33 zones) and one large outer-borough community (194 zones).
+
+Main files: `network_metrics.csv`, `communities_*.csv`, `community_summary_*.csv`, `community_flow_matrix_*.csv`, `major_od_flows_*.csv`, `zone_metrics_*.csv`, `temporal_community_ari.csv`, `louvain_seed_stability.csv`, and figures in `results/network/figures/`.
+
+## RQ2 — 168-dimensional weekday-hour profiles
 
 ```bash
 python -m src.temporal.build_profiles --threads 4
-```
-
-**Input definition:** 2025 Pickup-valid cleaned data; do **not** filter `valid_od`. Use the 263 TLC geographic zones (exclude 264 and 265). For ambiguous naive NYC wall-clock timestamps, exclude the *two entire DST switch dates* (March 9 and Nov 2, 2025) and divide each weekday-hour count by the number of retained calendar days of that weekday (not necessarily 52). `Monday=0` and `Sunday=6`.
-
-**Raw formula:** `raw[zone,weekday,hour] = count / (# retained dates of that weekday)`.
-
-**Normalized shape:** each zone row divided by the sum of its 168 raw values. If zero pickups, the row remains all zero and the zone is marked `no_pickups`; it is not assigned an artificial cluster. This row normalization removes *level*, so main clusters concern *temporal shape*.
-
-Outputs in `results/temporal/tables/`:
-
-- `zone_weekday_hour_counts.csv`: 263×168 = 44,184 zone/weekday/hour rows.
-- `zone_profiles_raw.csv`: 263 rows with `zone_id` + 168 hourly columns.
-- `zone_profiles_normalized.csv`: same shape, row sums = 1 for nonzero zones.
-- `zone_profile_diagnostics.csv`: included pickups, annual volume and sparsity.
-- `profile_metadata.json`: filters, DST, denominator, totals.
-
-Check:
-
-```bash
-python - <<'PY'
-import pandas as pd
-from pathlib import Path
-p=Path('results/temporal/tables')
-x=pd.read_csv(p/'zone_profiles_raw.csv')
-y=pd.read_csv(p/'zone_profiles_normalized.csv')
-z=pd.read_csv(p/'zone_weekday_hour_counts.csv')
-assert x.shape == (263,169) and y.shape == (263,169)
-assert len(z) == 263*168
-assert x.zone_id.is_unique and y.zone_id.is_unique
-assert not z.duplicated(['zone_id','day_of_week','hour']).any()
-sums=y.drop(columns='zone_id').sum(axis=1)
-assert (sums.sub(1).abs().lt(1e-7)|sums.eq(0)).all()
-print('PASS profile integrity; included pickups:',int(z.pickup_count.sum()))
-PY
-```
-
-## 3. PCA + K-means (main RQ2 results)
-
-```bash
 python -m src.temporal.cluster_profiles --min-pickups 1000 --variance 0.90
-```
-
-The method fits PCA on **row-normalized 168D shapes**, retains the minimum number of PCs with >=90% explained variance, then evaluates K-means K=2,...,8 using Silhouette **in the retained PCA space**. It prefers K with no clusters smaller than 5 zones; if none, uses highest silhouette and documents this. This is a heuristic for interpretability, not an official proposal requirement. It also measures K-means seed stability using ARI for seeds 42,...,46; outputs a raw-profile clustering as sensitivity; and compares annual RQ1 communities with RQ2 clusters using ARI/AMI and a cross-tab.
-
-Main artifacts in `results/temporal/tables/`:
-
-- `k_selection.csv`: candidate K, silhouette, cluster size and selected indicator.
-- `pca_explained_variance.csv`: PCA cumulative variance.
-- `zone_temporal_clusters.csv`: 263 zones, nullable cluster IDs for zero/low-volume zones, plus names.
-- `cluster_profiles.csv`: average normalized 168D profiles, plus average raw pickups.
-- `cluster_summary.csv`: sizes, median volume, peak weekday/hour and weekend share.
-- `cluster_representatives.csv`: 3 zones closest to each centroid (look up zone names).
-- `kmeans_seed_stability.csv`, `raw_vs_normalized_comparison.csv`.
-- `community_cluster_crosstab.csv`: if RQ1 communities exist.
-- `clustering_metadata.json`: K, retained PC count, ARI/AMI, thresholds, etc.
-
-**No leakage claim needed for RQ2 as this is retrospective, but it DOES become future leakage if 2025 full-year cluster IDs are fed into a 2025 historical forecasting experiment.** Keep RQ2 labels descriptive only.
-
-## 4. Make final figures
-
-```bash
 python -m src.temporal.plot_results
+python -m src.temporal.rq2_sparsity_sensitivity     # optional robustness
 ```
 
-Outputs to `results/temporal/figures/`: silhouette curve, PCA cumulative variance/scatter, 168D cluster heatmaps, weekday/weekend curves, cluster sizes, RQ1/RQ2 cross-tab plot, and taxi-zone cluster map if the official `.shp` file is found. The script searches recursively under `data/external/`, supporting your existing nested `taxi_zones/taxi_zones` structure.
+**Profile construction.** Pickup-valid cleaned trips (no `valid_od` filter), 263 TLC geographic zones. The two DST switch dates (2025-03-09, 2025-11-02) are excluded entirely. `raw[zone, weekday, hour] = count / number of retained calendar days of that weekday` (Monday = 0). The normalized profile divides each zone's 168 raw values by their sum, so clustering captures temporal *shape* rather than volume.
 
-**How to interpret:** use `cluster_summary.csv` with `rq2_cluster_168d_heatmaps.png`; describe actual peak timing and weekday/weekend distribution. Use `cluster_representatives.csv` to name representative real zones. Discuss whether spatial RQ1 communities and behavioral RQ2 clusters coincide; a low ARI/AMI is a meaningful result (different notions of similarity).
+**Clustering.** PCA on normalized profiles, keeping the fewest components reaching ≥ 90% variance; K-means for K = 2…8 evaluated by silhouette in PCA space. K is chosen as the highest silhouette among solutions whose smallest cluster has ≥ 5 zones (an interpretability heuristic). Zones with < 1,000 annual pickups are left unassigned. Diagnostics: seed stability (ARI over seeds 42–46), raw-vs-normalized clustering ARI, and RQ1–RQ2 agreement (ARI/AMI).
 
-## 5. Optional RQ1 robustness without overwriting original Louvain outputs
+**Key results** (`results/temporal/tables/`):
+
+- 14 principal components (90.2% variance); K = 3, silhouette 0.299; seed ARI = 1.0.
+- 227 zones clustered, 36 low-volume zones unassigned.
+
+| Cluster | Zones | Median annual pickups | Peak | Weekend share | Label |
+|---|---|---|---|---|---|
+| C0 | 128 | 9,574 | Tue 07:00 | 30.7% | Commuter (weekday AM peak) |
+| C1 | 79 | 244,266 | Sat 23:00 | 30.9% | Core activity (afternoon–evening) |
+| C2 | 20 | 69,122 | Sun 00:00 | 47.5% | Nightlife (weekend late night) |
+
+- Raw vs normalized ARI = 0.22: level and shape give different groupings.
+- RQ1 vs RQ2 ARI = 0.33, AMI = 0.27: spatial-flow communities and temporal-shape clusters capture different notions of similarity.
+
+**Sensitivity.** Alternative volume thresholds (1, 100, 500, 1000, 5000 pickups) are under `results/temporal/sensitivity/`; min1000 is the primary specification.
+
+## Historical network features for RQ3
 
 ```bash
-python -m src.network.rq1_resolution_sensitivity
+python -m src.network.network_features --window-hours 24 --threads 4
+python -m src.network.network_topology_features --window-hours 24 --threads 4
 ```
 
-For annual/weekday/weekend OD aggregates, it tests `gamma ∈ {0.5,1,1.5,2}` with five seeds and saves separate `rq1_resolution_sensitivity_*.csv` and figures. It never overwrites existing `communities_annual.csv` etc. Do not compare different gamma-adjusted modularity values as if optimized under one objective: the output includes both Q evaluated at each chosen gamma and Q re-evaluated at a fixed gamma=1 for comparability.
+Features are keyed by `zone_id` and `feature_as_of`; for target hour t only trips completed before t contribute. See `NETWORK_FEATURE_HANDOFF.md` and `NETWORK_TOPOLOGY_HANDOFF.md`.
 
-## 6. Optional sensitivity: omit extremely sparse zones
+## Leakage note
 
-**Do NOT overwrite the main result**. Copy just the input profiles to a separate folder:
-
-```bash
-mkdir -p results/temporal/sensitivity_min100
-cp results/temporal/tables/zone_profiles_{raw,normalized}.csv results/temporal/sensitivity_min100/
-cp results/temporal/tables/zone_profile_diagnostics.csv results/temporal/sensitivity_min100/
-python -m src.temporal.cluster_profiles \
-  --table-dir results/temporal/sensitivity_min100 --min-pickups 100
-```
-
-Compare chosen K, cluster sizes and seed ARI. Threshold 100 is exploratory, not theoretically optimal.
-
-## 7. Git and PR
-
-```bash
-python -m pytest tests/test_rq2_profiles.py tests/test_network_rq1.py -q
-git status --short
-git add src/temporal/ src/network/rq1_resolution_sensitivity.py \
-        tests/test_rq2_profiles.py notebooks/03_temporal_clustering.ipynb \
-        README_RQ1_RQ2.md results/temporal/
-# Only if optional RQ1 sensitivity was run:
-# git add results/network/tables/rq1_resolution_sensitivity_*.csv
-# git add results/network/figures/rq1_resolution_sensitivity_*.png
-git diff --cached --stat
-git diff --cached --name-only
-git commit -m 'Complete RQ2 weekday-hour PCA clustering and RQ1 sensitivity'
-git push -u origin feature/temporal-clustering
-```
-
-Double-check that staged changes do not include `.parquet`, raw trip data, extracted NYC shapefile or machine-specific paths. In the final report report sampling rules, normalized-vs-raw rationale, PCA retained variance, K/silhouette, cluster shapes/names, community comparisons and limitations.
+RQ1 communities and RQ2 clusters are full-year 2025 descriptive outputs. They are used in RQ4 only to slice evaluation rows and are never model inputs; using them as predictors in a 2025 forecasting experiment would leak future information.

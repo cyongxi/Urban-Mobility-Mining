@@ -10,12 +10,27 @@ study spatial mobility communities, temporal demand
 patterns, and the incremental value of historical
 network features for hourly demand forecasting.
 
-## Research Questions
+## Research Questions and Key Findings
 
-- RQ1: Mobility Communities
-- RQ2: Temporal Demand Profiles
-- RQ3: Incremental Predictive Value
-- RQ4: Heterogeneity of Predictive Gains
+| RQ | Question | Key finding | Details |
+|---|---|---|---|
+| RQ1 | Mobility communities in weighted OD networks | 3 Louvain communities (modularity ≈ 0.22); two Manhattan cores and one outer-borough community; weekday and weekend partitions nearly identical (ARI 0.97) | `README_RQ1_RQ2.md` |
+| RQ2 | Recurring weekday-hour demand profiles | K = 3 shape clusters (silhouette 0.30): commuter, core activity, nightlife; weak overlap with RQ1 (ARI 0.33) | `README_RQ1_RQ2.md` |
+| RQ3 | Incremental value of historical network features | OD strength lowers Test MAE by 0.55% (95% CI [0.005, 0.036]); degree and HHI add nothing further; all LightGBM models roughly halve seasonal-naive MAE | `README_RQ3_RQ4.md` |
+| RQ4 | Heterogeneity of gains | Gains concentrate in high-demand zones, Manhattan communities and the nightlife cluster | `README_RQ3_RQ4.md` |
+
+## Repository Map
+
+| Path | Contents |
+|---|---|
+| `notebooks/00–01` | Data audit and full-year cleaning |
+| `src/eda/` | Shared EDA summaries and proposal figures |
+| `src/network/` | OD networks, Louvain, historical network features (RQ1, RQ3 inputs) |
+| `src/temporal/` | 168-D profiles, PCA + K-means (RQ2) |
+| `notebooks/09_final_rq3_rq4.ipynb`, `src/forecasting/` | Final forecasting and evaluation (RQ3–RQ4) |
+| `scripts/add_persistence_baseline.py` | Lag-1 persistence benchmark from saved predictions |
+| `src/supplementary/`, `notebooks/10` | June 2025 Yellow / Uber / Lyft comparison |
+| `results/` | Aggregate tables and figures (trip-level data is local only) |
 
 ## Data
 
@@ -89,6 +104,13 @@ The final forecasting and heterogeneity analysis is in:
 
 Earlier notebooks (05–08) document model development,
 diagnostics, feature ablation, and exploratory analyses.
+
+A lag-1 persistence benchmark can be added from the saved
+prediction files without re-training:
+
+```bash
+python -m scripts.add_persistence_baseline
+```
 
 The final RQ4 analysis uses the RQ2 min1000 clusters
 for retrospective subgroup evaluation.
