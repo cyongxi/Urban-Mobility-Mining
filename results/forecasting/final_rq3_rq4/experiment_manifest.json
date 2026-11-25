@@ -1,0 +1,136 @@
+{
+  "notebook": "09_final_rq3_rq4.ipynb",
+  "smoke_test": false,
+  "params": {
+    "objective": "poisson",
+    "metric": "l1",
+    "n_estimators": 20000,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "min_child_samples": 20,
+    "random_state": 671,
+    "n_jobs": 4,
+    "verbosity": -1
+  },
+  "early_stopping_rounds": 200,
+  "feature_sets": {
+    "m1": [
+      "lag_1",
+      "lag_24",
+      "lag_168",
+      "rolling_mean_24",
+      "rolling_mean_168",
+      "hour",
+      "day_of_week",
+      "is_weekend",
+      "zone_id",
+      "lag_2",
+      "lag_3",
+      "rolling_mean_3",
+      "rolling_mean_6",
+      "trend_3_vs_24"
+    ],
+    "m2": [
+      "lag_1",
+      "lag_24",
+      "lag_168",
+      "rolling_mean_24",
+      "rolling_mean_168",
+      "hour",
+      "day_of_week",
+      "is_weekend",
+      "zone_id",
+      "lag_2",
+      "lag_3",
+      "rolling_mean_3",
+      "rolling_mean_6",
+      "trend_3_vs_24",
+      "in_strength_24h",
+      "out_strength_24h",
+      "interzone_in_strength_24h",
+      "interzone_out_strength_24h"
+    ],
+    "m3": [
+      "lag_1",
+      "lag_24",
+      "lag_168",
+      "rolling_mean_24",
+      "rolling_mean_168",
+      "hour",
+      "day_of_week",
+      "is_weekend",
+      "zone_id",
+      "lag_2",
+      "lag_3",
+      "rolling_mean_3",
+      "rolling_mean_6",
+      "trend_3_vs_24",
+      "in_strength_24h",
+      "out_strength_24h",
+      "interzone_in_strength_24h",
+      "interzone_out_strength_24h",
+      "in_degree_24h",
+      "out_degree_24h"
+    ],
+    "m4": [
+      "lag_1",
+      "lag_24",
+      "lag_168",
+      "rolling_mean_24",
+      "rolling_mean_168",
+      "hour",
+      "day_of_week",
+      "is_weekend",
+      "zone_id",
+      "lag_2",
+      "lag_3",
+      "rolling_mean_3",
+      "rolling_mean_6",
+      "trend_3_vs_24",
+      "in_strength_24h",
+      "out_strength_24h",
+      "interzone_in_strength_24h",
+      "interzone_out_strength_24h",
+      "in_degree_24h",
+      "out_degree_24h",
+      "in_hhi_24h",
+      "out_hhi_24h",
+      "has_interzone_in_flow_24h",
+      "has_interzone_out_flow_24h"
+    ]
+  },
+  "splits": {
+    "train": 1445185,
+    "validation": 385032,
+    "test": 340585,
+    "train_end_exclusive": "2025-09-01 00:00:00",
+    "validation_end_exclusive": "2025-11-01 00:00:00"
+  },
+  "rq1_file": "results/network/tables/communities_annual.csv",
+  "rq2_file": "results/temporal/sensitivity/min1000/zone_temporal_clusters.csv",
+  "rq2_names": {
+    "0": [
+      7,
+      "Commuter (weekday AM peak)"
+    ],
+    "1": [
+      23,
+      "Core activity (afternoon-evening)"
+    ],
+    "2": [
+      0,
+      "Nightlife (weekend late night)"
+    ]
+  },
+  "best_iterations": {
+    "m1": 8669,
+    "m2": 11840,
+    "m3": 8498,
+    "m4": 12776
+  },
+  "versions": {
+    "python": "3.11.18",
+    "pandas": "3.1.0",
+    "lightgbm": "4.7.0"
+  }
+}

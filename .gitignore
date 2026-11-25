@@ -35,3 +35,6 @@ results/eda/tables/daily_demand.csv
 # Jupyter temporary files
 .ipynb_checkpoints/
 
+
+# Model binaries
+*.joblib

@@ -1,0 +1,790 @@
+service,zone_id,Borough,Zone,pickup_count,zone_share
+Lyft,1,EWR,Newark Airport,0,0
+Lyft,2,Queens,Jamaica Bay,9,1.57884017348e-06
+Lyft,3,Bronx,Allerton/Pelham Gardens,12234,0.00214617007582
+Lyft,4,Manhattan,Alphabet City,16354,0.0028689280219
+Lyft,5,Staten Island,Arden Heights,1013,0.00017770723286
+Lyft,6,Staten Island,Arrochar/Fort Wadsworth,2732,0.000479265705995
+Lyft,7,Queens,Astoria,59286,0.0104003465028
+Lyft,8,Queens,Astoria Park,398,6.98198210051e-05
+Lyft,9,Queens,Auburndale,5039,0.000883975070465
+Lyft,10,Queens,Baisley Park,20251,0.00355256581702
+Lyft,11,Brooklyn,Bath Beach,5634,0.0009883539486
+Lyft,12,Manhattan,Battery Park,890,0.000156129750489
+Lyft,13,Manhattan,Battery Park City,23949,0.00420129370164
+Lyft,14,Brooklyn,Bay Ridge,28627,0.00502193973848
+Lyft,15,Queens,Bay Terrace/Fort Totten,3751,0.000658025498971
+Lyft,16,Queens,Bayside,10855,0.00190425667591
+Lyft,17,Brooklyn,Bedford,50767,0.00890588656525
+Lyft,18,Bronx,Bedford Park,23903,0.00419322407408
+Lyft,19,Queens,Bellerose,4909,0.000861169601292
+Lyft,20,Bronx,Belmont,15096,0.00264824125099
+Lyft,21,Brooklyn,Bensonhurst East,13307,0.00233440290984
+Lyft,22,Brooklyn,Bensonhurst West,17159,0.00301014650409
+Lyft,23,Staten Island,Bloomfield/Emerson Hill,6430,0.00112799359061
+Lyft,24,Manhattan,Bloomingdale,7952,0.00139499300662
+Lyft,25,Brooklyn,Boerum Hill,41381,0.00725933169099
+Lyft,26,Brooklyn,Borough Park,23383,0.00410200219739
+Lyft,27,Queens,Breezy Point/Fort Tilden/Riis Beach,640,0.000112273079003
+Lyft,28,Queens,Briarwood/Jamaica Hills,13798,0.00242053741264
+Lyft,29,Brooklyn,Brighton Beach,10206,0.00179040475673
+Lyft,30,Queens,Broad Channel,255,4.47338049154e-05
+Lyft,31,Bronx,Bronx Park,2550,0.000447338049154
+Lyft,32,Bronx,Bronxdale,12510,0.00219458784114
+Lyft,33,Brooklyn,Brooklyn Heights,32336,0.00567259731664
+Lyft,34,Brooklyn,Brooklyn Navy Yard,5592,0.000980986027791
+Lyft,35,Brooklyn,Brownsville,32967,0.00578329155547
+Lyft,36,Brooklyn,Bushwick North,51394,0.00901587909733
+Lyft,37,Brooklyn,Bushwick South,68832,0.0120749696468
+Lyft,38,Queens,Cambria Heights,7321,0.00128429876779
+Lyft,39,Brooklyn,Canarsie,40675,0.00713548045071
+Lyft,40,Brooklyn,Carroll Gardens,16726,0.00293418674908
+Lyft,41,Manhattan,Central Harlem,46603,0.00817540984498
+Lyft,42,Manhattan,Central Harlem North,61306,0.0107547084084
+Lyft,43,Manhattan,Central Park,9066,0.00159041833476
+Lyft,44,Staten Island,Charleston/Tottenville,1611,0.000282612391053
+Lyft,45,Manhattan,Chinatown,15918,0.00279244198683
+Lyft,46,Bronx,City Island,1326,0.00023261578556
+Lyft,47,Bronx,Claremont/Bathgate,17348,0.00304330214773
+Lyft,48,Manhattan,Clinton East,61459,0.0107815486913
+Lyft,49,Brooklyn,Clinton Hill,38784,0.0068037485876
+Lyft,50,Manhattan,Clinton West,35043,0.00614747735548
+Lyft,51,Bronx,Co-Op City,18337,0.00321679914013
+Lyft,52,Brooklyn,Cobble Hill,10794,0.00189355564806
+Lyft,53,Queens,College Point,7085,0.0012428980699
+Lyft,54,Brooklyn,Columbia Street,4360,0.00076486035071
+Lyft,55,Brooklyn,Coney Island,14497,0.00254316066611
+Lyft,56,Queens,Corona,16179,0.00283822835186
+Lyft,57,Queens,Corona,1392,0.000244193946832
+Lyft,58,Bronx,Country Club,1458,0.000255772108104
+Lyft,59,Bronx,Crotona Park,802,0.000140692202126
+Lyft,60,Bronx,Crotona Park East,11483,0.00201442463468
+Lyft,61,Brooklyn,Crown Heights North,83045,0.0145683091341
+Lyft,62,Brooklyn,Crown Heights South,22617,0.00396762535596
+Lyft,63,Brooklyn,Cypress Hills,16294,0.00285840242075
+Lyft,64,Queens,Douglaston,3384,0.00059364390523
+Lyft,65,Brooklyn,Downtown Brooklyn/MetroTech,31512,0.00552804572742
+Lyft,66,Brooklyn,DUMBO/Vinegar Hill,25621,0.00449460712053
+Lyft,67,Brooklyn,Dyker Heights,9114,0.00159883881568
+Lyft,68,Manhattan,East Chelsea,59747,0.010481218205
+Lyft,69,Bronx,East Concourse/Concourse Village,27903,0.00489493081785
+Lyft,70,Queens,East Elmhurst,15960,0.00279980990764
+Lyft,71,Brooklyn,East Flatbush/Farragut,22794,0.00399867587937
+Lyft,72,Brooklyn,East Flatbush/Remsen Village,27279,0.00478546456583
+Lyft,73,Queens,East Flushing,4656,0.000816786649749
+Lyft,74,Manhattan,East Harlem North,45933,0.0080578739654
+Lyft,75,Manhattan,East Harlem South,36010,0.00631711496079
+Lyft,76,Brooklyn,East New York,63852,0.0112013447508
+Lyft,77,Brooklyn,East New York/Pennsylvania Avenue,16757,0.00293962497634
+Lyft,78,Bronx,East Tremont,22201,0.00389464785461
+Lyft,79,Manhattan,East Village,69588,0.0122075922214
+Lyft,80,Brooklyn,East Williamsburg,55105,0.00966688752886
+Lyft,81,Bronx,Eastchester,14845,0.00260420915282
+Lyft,82,Queens,Elmhurst,38080,0.00668024820069
+Lyft,83,Queens,Elmhurst/Maspeth,13408,0.00235212100512
+Lyft,84,Staten Island,Eltingville/Annadale/Prince's Bay,1837,0.000322258822076
+Lyft,85,Brooklyn,Erasmus,17639,0.00309435131334
+Lyft,86,Queens,Far Rockaway,11659,0.0020452997314
+Lyft,87,Manhattan,Financial District North,38342,0.00672620999241
+Lyft,88,Manhattan,Financial District South,14878,0.00260999823345
+Lyft,89,Brooklyn,Flatbush/Ditmas Park,46293,0.00812102757234
+Lyft,90,Manhattan,Flatiron,34218,0.00600275033958
+Lyft,91,Brooklyn,Flatlands,26903,0.00471950413191
+Lyft,92,Queens,Flushing,27178,0.00476774647055
+Lyft,93,Queens,Flushing Meadows-Corona Park,6975,0.00122360113445
+Lyft,94,Bronx,Fordham South,9871,0.00173163681694
+Lyft,95,Queens,Forest Hills,41856,0.00734265936681
+Lyft,96,Queens,Forest Park/Highland Park,1076,0.000188759114074
+Lyft,97,Brooklyn,Fort Greene,43904,0.00770193321962
+Lyft,98,Queens,Fresh Meadows,5326,0.00093432252933
+Lyft,99,Staten Island,Freshkills Park,105,1.8419802024e-05
+Lyft,100,Manhattan,Garment District,27554,0.00483370690446
+Lyft,101,Queens,Glen Oaks,4837,0.000848538879904
+Lyft,102,Queens,Glendale,13451,0.00235966435261
+Lyft,103,Manhattan,Governor's Island/Ellis Island/Liberty Island,0,0
+Lyft,104,Manhattan,Governor's Island/Ellis Island/Liberty Island,0,0
+Lyft,105,Manhattan,Governor's Island/Ellis Island/Liberty Island,2,3.50853371885e-07
+Lyft,106,Brooklyn,Gowanus,16101,0.00282454507036
+Lyft,107,Manhattan,Gramercy,39772,0.00697707015331
+Lyft,108,Brooklyn,Gravesend,7351,0.00128956156836
+Lyft,109,Staten Island,Great Kills,2824,0.000495404961102
+Lyft,110,Staten Island,Great Kills Park,14,2.4559736032e-06
+Lyft,111,Brooklyn,Green-Wood Cemetery,271,4.75406318904e-05
+Lyft,112,Brooklyn,Greenpoint,64537,0.0113215120307
+Lyft,113,Manhattan,Greenwich Village North,28862,0.00506316500967
+Lyft,114,Manhattan,Greenwich Village South,31293,0.0054896272832
+Lyft,115,Staten Island,Grymes Hill/Clifton,4520,0.00079292862046
+Lyft,116,Manhattan,Hamilton Heights,27691,0.00485774036044
+Lyft,117,Queens,Hammels/Arverne,8248,0.00144691930565
+Lyft,118,Staten Island,Heartland Village/Todt Hill,4596,0.000806261048592
+Lyft,119,Bronx,Highbridge,18542,0.00325276161075
+Lyft,120,Manhattan,Highbridge Park,483,8.47310893103e-05
+Lyft,121,Queens,Hillcrest/Pomonok,12096,0.00212196119316
+Lyft,122,Queens,Hollis,7217,0.00126605439245
+Lyft,123,Brooklyn,Homecrest,13967,0.00245018452256
+Lyft,124,Queens,Howard Beach,8541,0.00149831932464
+Lyft,125,Manhattan,Hudson Sq,17495,0.00306908987056
+Lyft,126,Bronx,Hunts Point,16622,0.00291594237374
+Lyft,127,Manhattan,Inwood,20793,0.0036476470808
+Lyft,128,Manhattan,Inwood Hill Park,1792,0.000314364621209
+Lyft,129,Queens,Jackson Heights,44851,0.00786806229121
+Lyft,130,Queens,Jamaica,48968,0.00859029395723
+Lyft,131,Queens,Jamaica Estates,8696,0.00152551046096
+Lyft,132,Queens,JFK Airport,89686,0.0157333177554
+Lyft,133,Brooklyn,Kensington,11131,0.00195267444123
+Lyft,134,Queens,Kew Gardens,14161,0.00248421729963
+Lyft,135,Queens,Kew Gardens Hills,9738,0.00170830506771
+Lyft,136,Bronx,Kingsbridge Heights,12895,0.00226212711523
+Lyft,137,Manhattan,Kips Bay,29123,0.0051089513747
+Lyft,138,Queens,LaGuardia Airport,125543,0.0220235924333
+Lyft,139,Queens,Laurelton,12122,0.002126522287
+Lyft,140,Manhattan,Lenox Hill East,35794,0.00627922279663
+Lyft,141,Manhattan,Lenox Hill West,36092,0.00633149994904
+Lyft,142,Manhattan,Lincoln Square East,35618,0.0062483476999
+Lyft,143,Manhattan,Lincoln Square West,29643,0.0052001732514
+Lyft,144,Manhattan,Little Italy/NoLiTa,37285,0.00654078398537
+Lyft,145,Queens,Long Island City/Hunters Point,52200,0.0091572730062
+Lyft,146,Queens,Long Island City/Queens Plaza,16067,0.00281858056304
+Lyft,147,Bronx,Longwood,11013,0.00193197409229
+Lyft,148,Manhattan,Lower East Side,60213,0.0105629670407
+Lyft,149,Brooklyn,Madison,12011,0.00210704992486
+Lyft,150,Brooklyn,Manhattan Beach,5281,0.000926428328463
+Lyft,151,Manhattan,Manhattan Valley,15895,0.00278840717306
+Lyft,152,Manhattan,Manhattanville,13273,0.00232843840252
+Lyft,153,Manhattan,Marble Hill,4638,0.000813628969402
+Lyft,154,Brooklyn,Marine Park/Floyd Bennett Field,555,9.73618106981e-05
+Lyft,155,Brooklyn,Marine Park/Mill Basin,13604,0.00238650463556
+Lyft,156,Staten Island,Mariners Harbor,6548,0.00114869393955
+Lyft,157,Queens,Maspeth,22944,0.00402498988227
+Lyft,158,Manhattan,Meatpacking/West Village West,33149,0.00581521921231
+Lyft,159,Bronx,Melrose South,24077,0.00422374831744
+Lyft,160,Queens,Middle Village,12653,0.00221967385723
+Lyft,161,Manhattan,Midtown Center,49222,0.00863485233546
+Lyft,162,Manhattan,Midtown East,38621,0.00677515403779
+Lyft,163,Manhattan,Midtown North,38851,0.00681550217555
+Lyft,164,Manhattan,Midtown South,53567,0.00939708128588
+Lyft,165,Brooklyn,Midwood,14925,0.00261824328769
+Lyft,166,Manhattan,Morningside Heights,20425,0.00358309006038
+Lyft,167,Bronx,Morrisania/Melrose,19380,0.00339976917357
+Lyft,168,Bronx,Mott Haven/Port Morris,37008,0.00649219079336
+Lyft,169,Bronx,Mount Hope,22712,0.00398429089113
+Lyft,170,Manhattan,Murray Hill,49497,0.0086830946741
+Lyft,171,Queens,Murray Hill-Queens,9500,0.00166655351645
+Lyft,172,Staten Island,New Dorp/Midland Beach,2853,0.000500492334994
+Lyft,173,Queens,North Corona,13270,0.00232791212246
+Lyft,174,Bronx,Norwood,20722,0.0036351917861
+Lyft,175,Queens,Oakland Gardens,3640,0.000638553136831
+Lyft,176,Staten Island,Oakwood,1566,0.000274718190186
+Lyft,177,Brooklyn,Ocean Hill,24994,0.00438461458845
+Lyft,178,Brooklyn,Ocean Parkway South,4601,0.000807138182022
+Lyft,179,Queens,Old Astoria,22402,0.00392990861849
+Lyft,180,Queens,Ozone Park,9439,0.00165585248861
+Lyft,181,Brooklyn,Park Slope,71532,0.0125486216988
+Lyft,182,Bronx,Parkchester,12621,0.00221406020328
+Lyft,183,Bronx,Pelham Bay,6317,0.0011081703751
+Lyft,184,Bronx,Pelham Bay Park,2004,0.000351555078629
+Lyft,185,Bronx,Pelham Parkway,15910,0.00279103857335
+Lyft,186,Manhattan,Penn Station/Madison Sq West,34428,0.00603958994363
+Lyft,187,Staten Island,Port Richmond,3816,0.000669428233557
+Lyft,188,Brooklyn,Prospect-Lefferts Gardens,44306,0.00777245474737
+Lyft,189,Brooklyn,Prospect Heights,25331,0.00444373338161
+Lyft,190,Brooklyn,Prospect Park,4459,0.000782227592618
+Lyft,191,Queens,Queens Village,16581,0.00290874987961
+Lyft,192,Queens,Queensboro Hill,7121,0.0012492134306
+Lyft,193,Queens,Queensbridge/Ravenswood,10931,0.00191758910404
+Lyft,194,Manhattan,Randalls Island,1406,0.000246649920435
+Lyft,195,Brooklyn,Red Hook,14108,0.00247491968528
+Lyft,196,Queens,Rego Park,15540,0.00272613069955
+Lyft,197,Queens,Richmond Hill,25317,0.00444127740801
+Lyft,198,Queens,Ridgewood,35778,0.00627641596965
+Lyft,199,Bronx,Rikers Island,8,1.40341348754e-06
+Lyft,200,Bronx,Riverdale/North Riverdale/Fieldston,10510,0.00184373446926
+Lyft,201,Queens,Rockaway Park,3666,0.000643114230665
+Lyft,202,Manhattan,Roosevelt Island,3368,0.000590837078255
+Lyft,203,Queens,Rosedale,12687,0.00222563836455
+Lyft,204,Staten Island,Rossville/Woodrow,1010,0.000177180952802
+Lyft,205,Queens,Saint Albans,26171,0.0045910917978
+Lyft,206,Staten Island,Saint George/New Brighton,10836,0.00190092356887
+Lyft,207,Queens,Saint Michaels Cemetery/Woodside,2949,0.000517333296845
+Lyft,208,Bronx,Schuylerville/Edgewater Park,16361,0.00287015600871
+Lyft,209,Manhattan,Seaport,13750,0.00241211693171
+Lyft,210,Brooklyn,Sheepshead Bay,15840,0.00277875870533
+Lyft,211,Manhattan,SoHo,27561,0.00483493489126
+Lyft,212,Bronx,Soundview/Bruckner,13307,0.00233440290984
+Lyft,213,Bronx,Soundview/Castle Hill,24507,0.00429918179239
+Lyft,214,Staten Island,South Beach/Dongan Hills,3849,0.000675217314193
+Lyft,215,Queens,South Jamaica,20039,0.0035153753596
+Lyft,216,Queens,South Ozone Park,34312,0.00601924044806
+Lyft,217,Brooklyn,South Williamsburg,9187,0.00161164496375
+Lyft,218,Queens,Springfield Gardens North,13580,0.0023822943951
+Lyft,219,Queens,Springfield Gardens South,11573,0.00203021303641
+Lyft,220,Bronx,Spuyten Duyvil/Kingsbridge,19770,0.00346818558108
+Lyft,221,Staten Island,Stapleton,7626,0.001337803907
+Lyft,222,Brooklyn,Starrett City,6878,0.00120658474591
+Lyft,223,Queens,Steinway,31877,0.00559207646779
+Lyft,224,Manhattan,Stuy Town/Peter Cooper Village,12179,0.00213652160809
+Lyft,225,Brooklyn,Stuyvesant Heights,49608,0.00870256703624
+Lyft,226,Queens,Sunnyside,39595,0.0069460196299
+Lyft,227,Brooklyn,Sunset Park East,12108,0.00212406631339
+Lyft,228,Brooklyn,Sunset Park West,32419,0.00568715773157
+Lyft,229,Manhattan,Sutton Place/Turtle Bay North,31839,0.00558541025372
+Lyft,230,Manhattan,Times Sq/Theatre District,56764,0.00995792040084
+Lyft,231,Manhattan,TriBeCa/Civic Center,59212,0.010387364928
+Lyft,232,Manhattan,Two Bridges/Seward Park,26814,0.00470389115686
+Lyft,233,Manhattan,UN/Turtle Bay South,31508,0.00552734402068
+Lyft,234,Manhattan,Union Sq,52126,0.00914429143144
+Lyft,235,Bronx,University Heights/Morris Heights,22391,0.00392797892494
+Lyft,236,Manhattan,Upper East Side North,35811,0.00628220505029
+Lyft,237,Manhattan,Upper East Side South,37638,0.00660270960551
+Lyft,238,Manhattan,Upper West Side North,28685,0.00503211448626
+Lyft,239,Manhattan,Upper West Side South,35842,0.00628764327755
+Lyft,240,Bronx,Van Cortlandt Park,3882,0.000681006394829
+Lyft,241,Bronx,Van Cortlandt Village,17776,0.00311838476931
+Lyft,242,Bronx,Van Nest/Morris Park,21268,0.00373097475663
+Lyft,243,Manhattan,Washington Heights North,30373,0.00532823473213
+Lyft,244,Manhattan,Washington Heights South,44942,0.00788402611963
+Lyft,245,Staten Island,West Brighton,3981,0.000698373636737
+Lyft,246,Manhattan,West Chelsea/Hudson Yards,57810,0.0101414167143
+Lyft,247,Bronx,West Concourse,30818,0.00540629960738
+Lyft,248,Bronx,West Farms/Bronx River,11835,0.00207617482813
+Lyft,249,Manhattan,West Village,47716,0.00837065974643
+Lyft,250,Bronx,Westchester Village/Unionport,11633,0.00204073863757
+Lyft,251,Staten Island,Westerleigh,3954,0.000693637116217
+Lyft,252,Queens,Whitestone,6304,0.00110588982818
+Lyft,253,Queens,Willets Point,256,4.49092316013e-05
+Lyft,254,Bronx,Williamsbridge/Olinville,25265,0.00443215522034
+Lyft,255,Brooklyn,Williamsburg (North Side),65120,0.0114237857886
+Lyft,256,Brooklyn,Williamsburg (South Side),55552,0.00974530325748
+Lyft,257,Brooklyn,Windsor Terrace,11628,0.00203986150414
+Lyft,258,Queens,Woodhaven,17542,0.0030773349248
+Lyft,259,Bronx,Woodlawn/Wakefield,17618,0.00309066735294
+Lyft,260,Queens,Woodside,26580,0.00466284131235
+Lyft,261,Manhattan,World Trade Center,18801,0.00329819712241
+Lyft,262,Manhattan,Yorkville East,22813,0.00400200898641
+Lyft,263,Manhattan,Yorkville West,31792,0.00557716519949
+Uber,1,EWR,Newark Airport,0,0
+Uber,2,Queens,Jamaica Bay,55,3.88234133983e-06
+Uber,3,Bronx,Allerton/Pelham Gardens,34214,0.00241509866547
+Uber,4,Manhattan,Alphabet City,35834,0.00252945126493
+Uber,5,Staten Island,Arden Heights,5138,0.000362681269164
+Uber,6,Staten Island,Arrochar/Fort Wadsworth,9227,0.000651315700774
+Uber,7,Queens,Astoria,131491,0.00928168991119
+Uber,8,Queens,Astoria Park,896,6.3246869827e-05
+Uber,9,Queens,Auburndale,14330,0.00101152638909
+Uber,10,Queens,Baisley Park,49900,0.00352234241559
+Uber,11,Brooklyn,Bath Beach,18042,0.00127354913551
+Uber,12,Manhattan,Battery Park,1491,0.000105246744321
+Uber,13,Manhattan,Battery Park City,64106,0.00452511588965
+Uber,14,Brooklyn,Bay Ridge,82801,0.00584475900507
+Uber,15,Queens,Bay Terrace/Fort Totten,11679,0.000824397536506
+Uber,16,Queens,Bayside,32085,0.00226481676161
+Uber,17,Brooklyn,Bedford,110761,0.00781840016619
+Uber,18,Bronx,Bedford Park,69991,0.00494052641302
+Uber,19,Queens,Bellerose,14063,0.000992679386582
+Uber,20,Bronx,Belmont,42547,0.00300330867247
+Uber,21,Brooklyn,Bensonhurst East,42102,0.00297189700163
+Uber,22,Brooklyn,Bensonhurst West,58054,0.00409791716622
+Uber,23,Staten Island,Bloomfield/Emerson Hill,24194,0.00170780666138
+Uber,24,Manhattan,Bloomingdale,15773,0.00111338490824
+Uber,25,Brooklyn,Boerum Hill,75722,0.00534506638063
+Uber,26,Brooklyn,Borough Park,83561,0.00589840590359
+Uber,27,Queens,Breezy Point/Fort Tilden/Riis Beach,2060,0.000145411330183
+Uber,28,Queens,Briarwood/Jamaica Hills,37129,0.00262086275648
+Uber,29,Brooklyn,Brighton Beach,31830,0.00224681681539
+Uber,30,Queens,Broad Channel,1226,8.6540917866e-05
+Uber,31,Bronx,Bronx Park,7368,0.000520092563488
+Uber,32,Bronx,Bronxdale,36905,0.00260505103902
+Uber,33,Brooklyn,Brooklyn Heights,63080,0.00445269257666
+Uber,34,Brooklyn,Brooklyn Navy Yard,10644,0.000751338931293
+Uber,35,Brooklyn,Brownsville,84362,0.0059549469111
+Uber,36,Brooklyn,Bushwick North,119970,0.00846844528253
+Uber,37,Brooklyn,Bushwick South,159752,0.0112765780676
+Uber,38,Queens,Cambria Heights,20102,0.00141896046569
+Uber,39,Brooklyn,Canarsie,110966,0.00783287071119
+Uber,40,Brooklyn,Carroll Gardens,31464,0.00222098159848
+Uber,41,Manhattan,Central Harlem,81303,0.00573901814458
+Uber,42,Manhattan,Central Harlem North,111206,0.00784981183703
+Uber,43,Manhattan,Central Park,22149,0.00156345415156
+Uber,44,Staten Island,Charleston/Tottenville,8204,0.000579104151853
+Uber,45,Manhattan,Chinatown,31511,0.00222429923562
+Uber,46,Bronx,City Island,4172,0.000294493237632
+Uber,47,Bronx,Claremont/Bathgate,47266,0.00333641355942
+Uber,48,Manhattan,Clinton East,128098,0.00904218474453
+Uber,49,Brooklyn,Clinton Hill,76193,0.0053783133401
+Uber,50,Manhattan,Clinton West,71435,0.00504245552019
+Uber,51,Bronx,Co-Op City,61198,0.00431984591481
+Uber,52,Brooklyn,Cobble Hill,19026,0.00134300775148
+Uber,53,Queens,College Point,24326,0.00171712428059
+Uber,54,Brooklyn,Columbia Street,7482,0.000528139598265
+Uber,55,Brooklyn,Coney Island,47275,0.00333704885164
+Uber,56,Queens,Corona,48291,0.00340876628439
+Uber,57,Queens,Corona,3775,0.000266469791961
+Uber,58,Bronx,Country Club,5518,0.000389504718421
+Uber,59,Bronx,Crotona Park,1802,0.000127199619898
+Uber,60,Bronx,Crotona Park East,33796,0.00238559287129
+Uber,61,Brooklyn,Crown Heights North,179127,0.0126442210396
+Uber,62,Brooklyn,Crown Heights South,51082,0.00360577746038
+Uber,63,Brooklyn,Cypress Hills,48986,0.00345782496132
+Uber,64,Queens,Douglaston,10992,0.000775903563771
+Uber,65,Brooklyn,Downtown Brooklyn/MetroTech,61759,0.00435944579648
+Uber,66,Brooklyn,DUMBO/Vinegar Hill,52132,0.00367989488596
+Uber,67,Brooklyn,Dyker Heights,28338,0.00200032343433
+Uber,68,Manhattan,East Chelsea,143834,0.0101529578959
+Uber,69,Bronx,East Concourse/Concourse Village,72780,0.00513739641296
+Uber,70,Queens,East Elmhurst,34696,0.00244912209321
+Uber,71,Brooklyn,East Flatbush/Farragut,64345,0.00454198642748
+Uber,72,Brooklyn,East Flatbush/Remsen Village,72960,0.00515010225734
+Uber,73,Queens,East Flushing,16218,0.00114479657908
+Uber,74,Manhattan,East Harlem North,87154,0.00615202867511
+Uber,75,Manhattan,East Harlem South,78551,0.00554475990154
+Uber,76,Brooklyn,East New York,157368,0.0111082962176
+Uber,77,Brooklyn,East New York/Pennsylvania Avenue,43048,0.00303867327267
+Uber,78,Bronx,East Tremont,63239,0.00446391607253
+Uber,79,Manhattan,East Village,152931,0.0107950971535
+Uber,80,Brooklyn,East Williamsburg,112605,0.00794856448311
+Uber,81,Bronx,Eastchester,44251,0.00312359066598
+Uber,82,Queens,Elmhurst,110321,0.00778734143547
+Uber,83,Queens,Elmhurst/Maspeth,36123,0.00254985120397
+Uber,84,Staten Island,Eltingville/Annadale/Prince's Bay,8153,0.000575504162611
+Uber,85,Brooklyn,Erasmus,46515,0.00328340195313
+Uber,86,Queens,Far Rockaway,33166,0.00234112241594
+Uber,87,Manhattan,Financial District North,85304,0.00602144083005
+Uber,88,Manhattan,Financial District South,34137,0.00240966338759
+Uber,89,Brooklyn,Flatbush/Ditmas Park,112339,0.00792978806863
+Uber,90,Manhattan,Flatiron,89329,0.0063055576281
+Uber,91,Brooklyn,Flatlands,73366,0.00517876099523
+Uber,92,Queens,Flushing,83511,0.00589487650237
+Uber,93,Queens,Flushing Meadows-Corona Park,17027,0.00120190229079
+Uber,94,Bronx,Fordham South,31011,0.00218900522344
+Uber,95,Queens,Forest Hills,99565,0.00702809664545
+Uber,96,Queens,Forest Park/Highland Park,2682,0.000189317081335
+Uber,97,Brooklyn,Fort Greene,82697,0.00583741785054
+Uber,98,Queens,Fresh Meadows,13867,0.000978844133807
+Uber,99,Staten Island,Freshkills Park,438,3.09175546699e-05
+Uber,100,Manhattan,Garment District,78657,0.00555224223212
+Uber,101,Queens,Glen Oaks,14555,0.00102740869457
+Uber,102,Queens,Glendale,35514,0.00250686309714
+Uber,103,Manhattan,Governor's Island/Ellis Island/Liberty Island,0,0
+Uber,104,Manhattan,Governor's Island/Ellis Island/Liberty Island,0,0
+Uber,105,Manhattan,Governor's Island/Ellis Island/Liberty Island,2,1.41176048721e-07
+Uber,106,Brooklyn,Gowanus,29158,0.0020582056143
+Uber,107,Manhattan,Gramercy,91251,0.00644122781092
+Uber,108,Brooklyn,Gravesend,22616,0.00159641875894
+Uber,109,Staten Island,Great Kills,12065,0.000851644513909
+Uber,110,Staten Island,Great Kills Park,54,3.81175331547e-06
+Uber,111,Brooklyn,Green-Wood Cemetery,625,4.41175152253e-05
+Uber,112,Brooklyn,Greenpoint,135957,0.00959693602798
+Uber,113,Manhattan,Greenwich Village North,73085,0.00515892576039
+Uber,114,Manhattan,Greenwich Village South,75358,0.00531937233976
+Uber,115,Staten Island,Grymes Hill/Clifton,12334,0.000870632692462
+Uber,116,Manhattan,Hamilton Heights,58976,0.00416299932468
+Uber,117,Queens,Hammels/Arverne,25207,0.00177931233005
+Uber,118,Staten Island,Heartland Village/Todt Hill,16919,0.00119427878416
+Uber,119,Bronx,Highbridge,48594,0.00343015445577
+Uber,120,Manhattan,Highbridge Park,1371,9.67761813982e-05
+Uber,121,Queens,Hillcrest/Pomonok,29794,0.0021030995978
+Uber,122,Queens,Hollis,18081,0.00127630206846
+Uber,123,Brooklyn,Homecrest,41887,0.00295672057639
+Uber,124,Queens,Howard Beach,23334,0.00164710096043
+Uber,125,Manhattan,Hudson Sq,49883,0.00352114241917
+Uber,126,Bronx,Hunts Point,43661,0.0030819437316
+Uber,127,Manhattan,Inwood,51947,0.00366683610145
+Uber,128,Manhattan,Inwood Hill Park,3711,0.000261952158402
+Uber,129,Queens,Jackson Heights,115727,0.00816894029517
+Uber,130,Queens,Jamaica,116666,0.00823522245004
+Uber,131,Queens,Jamaica Estates,22990,0.00162281868005
+Uber,132,Queens,JFK Airport,254637,0.0179743227591
+Uber,133,Brooklyn,Kensington,27223,0.00192161778717
+Uber,134,Queens,Kew Gardens,33738,0.00238149876587
+Uber,135,Queens,Kew Gardens Hills,25081,0.00177041823899
+Uber,136,Bronx,Kingsbridge Heights,39397,0.00278095639573
+Uber,137,Manhattan,Kips Bay,65441,0.00461935090217
+Uber,138,Queens,LaGuardia Airport,311165,0.0219645226001
+Uber,139,Queens,Laurelton,30336,0.002141358307
+Uber,140,Manhattan,Lenox Hill East,69742,0.00492294999495
+Uber,141,Manhattan,Lenox Hill West,84483,0.00596348806205
+Uber,142,Manhattan,Lincoln Square East,84355,0.00595445279493
+Uber,143,Manhattan,Lincoln Square West,58757,0.00414754054735
+Uber,144,Manhattan,Little Italy/NoLiTa,91099,0.00643049843122
+Uber,145,Queens,Long Island City/Hunters Point,121804,0.00859790371921
+Uber,146,Queens,Long Island City/Queens Plaza,35484,0.00250474545641
+Uber,147,Bronx,Longwood,30855,0.00217799349164
+Uber,148,Manhattan,Lower East Side,133546,0.00942674830125
+Uber,149,Brooklyn,Madison,35676,0.00251829835708
+Uber,150,Brooklyn,Manhattan Beach,17531,0.00123747865506
+Uber,151,Manhattan,Manhattan Valley,34786,0.0024554750154
+Uber,152,Manhattan,Manhattanville,26803,0.00189197081693
+Uber,153,Manhattan,Marble Hill,13905,0.000981526478733
+Uber,154,Brooklyn,Marine Park/Floyd Bennett Field,1787,0.000126140799532
+Uber,155,Brooklyn,Marine Park/Mill Basin,43765,0.00308928488614
+Uber,156,Staten Island,Mariners Harbor,22442,0.0015841364427
+Uber,157,Queens,Maspeth,48571,0.00342853093121
+Uber,158,Manhattan,Meatpacking/West Village West,80857,0.00570753588572
+Uber,159,Bronx,Melrose South,63613,0.00449031599364
+Uber,160,Queens,Middle Village,34113,0.00240796927501
+Uber,161,Manhattan,Midtown Center,175841,0.0124122687916
+Uber,162,Manhattan,Midtown East,118552,0.00836835146399
+Uber,163,Manhattan,Midtown North,120929,0.00853613919789
+Uber,164,Manhattan,Midtown South,138255,0.00975914730796
+Uber,165,Brooklyn,Midwood,45173,0.00318867282444
+Uber,166,Manhattan,Morningside Heights,42947,0.00303154388221
+Uber,167,Bronx,Morrisania/Melrose,54230,0.00382798856107
+Uber,168,Bronx,Mott Haven/Port Morris,91739,0.00647567476681
+Uber,169,Bronx,Mount Hope,67866,0.00479052686125
+Uber,170,Manhattan,Murray Hill,117045,0.00826197531127
+Uber,171,Queens,Murray Hill-Queens,31298,0.00220926398643
+Uber,172,Staten Island,New Dorp/Midland Beach,10507,0.000741668371956
+Uber,173,Queens,North Corona,39607,0.00279577988085
+Uber,174,Bronx,Norwood,63929,0.00451262180934
+Uber,175,Queens,Oakland Gardens,11683,0.000824679888604
+Uber,176,Staten Island,Oakwood,5707,0.000402845855025
+Uber,177,Brooklyn,Ocean Hill,60569,0.00427544604749
+Uber,178,Brooklyn,Ocean Parkway South,14582,0.00102931457122
+Uber,179,Queens,Old Astoria,49825,0.00351704831376
+Uber,180,Queens,Ozone Park,26122,0.00184390037234
+Uber,181,Brooklyn,Park Slope,124400,0.00878115023045
+Uber,182,Bronx,Parkchester,40126,0.00283241506549
+Uber,183,Bronx,Pelham Bay,20719,0.00146251327673
+Uber,184,Bronx,Pelham Bay Park,6060,0.000427763427625
+Uber,185,Bronx,Pelham Parkway,47740,0.00336987228297
+Uber,186,Manhattan,Penn Station/Madison Sq West,84495,0.00596433511834
+Uber,187,Staten Island,Port Richmond,11859,0.000837103380891
+Uber,188,Brooklyn,Prospect-Lefferts Gardens,108466,0.00765640065029
+Uber,189,Brooklyn,Prospect Heights,46161,0.0032584137925
+Uber,190,Brooklyn,Prospect Park,9058,0.000639386324657
+Uber,191,Queens,Queens Village,45118,0.0031847904831
+Uber,192,Queens,Queensboro Hill,20086,0.0014178310573
+Uber,193,Queens,Queensbridge/Ravenswood,24098,0.00170103021104
+Uber,194,Manhattan,Randalls Island,2801,0.000197717056234
+Uber,195,Brooklyn,Red Hook,29072,0.00205213504421
+Uber,196,Queens,Rego Park,38232,0.00269872134735
+Uber,197,Queens,Richmond Hill,63963,0.00451502180217
+Uber,198,Queens,Ridgewood,95348,0.00673042694672
+Uber,199,Bronx,Rikers Island,0,0
+Uber,200,Bronx,Riverdale/North Riverdale/Fieldston,30834,0.00217651114313
+Uber,201,Queens,Rockaway Park,13899,0.000981102950586
+Uber,202,Manhattan,Roosevelt Island,10597,0.000748021294148
+Uber,203,Queens,Rosedale,29430,0.00207740555693
+Uber,204,Staten Island,Rossville/Woodrow,4860,0.000343057798392
+Uber,205,Queens,Saint Albans,61955,0.00437328104925
+Uber,206,Staten Island,Saint George/New Brighton,32668,0.00230596957981
+Uber,207,Queens,Saint Michaels Cemetery/Woodside,689,4.86351487844e-05
+Uber,208,Bronx,Schuylerville/Edgewater Park,51841,0.00365935377087
+Uber,209,Manhattan,Seaport,28406,0.00200512341998
+Uber,210,Brooklyn,Sheepshead Bay,48358,0.00341349568202
+Uber,211,Manhattan,SoHo,76475,0.00539821916297
+Uber,212,Bronx,Soundview/Bruckner,39488,0.00278737990595
+Uber,213,Bronx,Soundview/Castle Hill,72149,0.00509285536959
+Uber,214,Staten Island,South Beach/Dongan Hills,13441,0.000948773635429
+Uber,215,Queens,South Jamaica,44167,0.00311766127193
+Uber,216,Queens,South Ozone Park,106961,0.00755016567362
+Uber,217,Brooklyn,South Williamsburg,26153,0.0018460886011
+Uber,218,Queens,Springfield Gardens North,31123,0.00219691108217
+Uber,219,Queens,Springfield Gardens South,28811,0.00203371156985
+Uber,220,Bronx,Spuyten Duyvil/Kingsbridge,52277,0.00369013014949
+Uber,221,Staten Island,Stapleton,21223,0.001498089641
+Uber,222,Brooklyn,Starrett City,18189,0.00128392557509
+Uber,223,Queens,Steinway,69207,0.00488518540192
+Uber,224,Manhattan,Stuy Town/Peter Cooper Village,25947,0.00183154746808
+Uber,225,Brooklyn,Stuyvesant Heights,109411,0.00772310633331
+Uber,226,Queens,Sunnyside,86713,0.00612089935637
+Uber,227,Brooklyn,Sunset Park East,39882,0.00281519158755
+Uber,228,Brooklyn,Sunset Park West,78732,0.00555753633395
+Uber,229,Manhattan,Sutton Place/Turtle Bay North,73819,0.00521073737027
+Uber,230,Manhattan,Times Sq/Theatre District,177911,0.012558386002
+Uber,231,Manhattan,TriBeCa/Civic Center,153569,0.010840132313
+Uber,232,Manhattan,Two Bridges/Seward Park,54869,0.00387309430864
+Uber,233,Manhattan,UN/Turtle Bay South,71968,0.00508007893718
+Uber,234,Manhattan,Union Sq,143130,0.0101032639267
+Uber,235,Bronx,University Heights/Morris Heights,58220,0.00410963477827
+Uber,236,Manhattan,Upper East Side North,90944,0.00641955728744
+Uber,237,Manhattan,Upper East Side South,117672,0.00830623400255
+Uber,238,Manhattan,Upper West Side North,62021,0.00437793985886
+Uber,239,Manhattan,Upper West Side South,76247,0.00538212509341
+Uber,240,Bronx,Van Cortlandt Park,12048,0.000850444517495
+Uber,241,Bronx,Van Cortlandt Village,57754,0.00407674075892
+Uber,242,Bronx,Van Nest/Morris Park,57341,0.00404758790485
+Uber,243,Manhattan,Washington Heights North,76299,0.00538579567068
+Uber,244,Manhattan,Washington Heights South,100533,0.00709642585303
+Uber,245,Staten Island,West Brighton,12683,0.000895267912964
+Uber,246,Manhattan,West Chelsea/Hudson Yards,145805,0.0102920868919
+Uber,247,Bronx,West Concourse,75692,0.00534294873989
+Uber,248,Bronx,West Farms/Bronx River,36451,0.00257300407596
+Uber,249,Manhattan,West Village,115758,0.00817112852392
+Uber,250,Bronx,Westchester Village/Unionport,37273,0.00263102743199
+Uber,251,Staten Island,Westerleigh,12696,0.000896185557281
+Uber,252,Queens,Whitestone,21547,0.0015209601609
+Uber,253,Queens,Willets Point,875,6.17645213154e-05
+Uber,254,Bronx,Williamsbridge/Olinville,74620,0.00526727837778
+Uber,255,Brooklyn,Williamsburg (North Side),139510,0.00984773527853
+Uber,256,Brooklyn,Williamsburg (South Side),115738,0.00816971676343
+Uber,257,Brooklyn,Windsor Terrace,20170,0.00142376045135
+Uber,258,Queens,Woodhaven,49892,0.00352177771139
+Uber,259,Bronx,Woodlawn/Wakefield,52400,0.00369881247649
+Uber,260,Queens,Woodside,66803,0.00471549179135
+Uber,261,Manhattan,World Trade Center,51457,0.00363224796952
+Uber,262,Manhattan,Yorkville East,42475,0.00299822633471
+Uber,263,Manhattan,Yorkville West,66566,0.00469876242958
+Yellow,1,EWR,Newark Airport,486,0.000112647458652
+Yellow,2,Queens,Jamaica Bay,5,1.15892447173e-06
+Yellow,3,Bronx,Allerton/Pelham Gardens,502,0.000116356016962
+Yellow,4,Manhattan,Alphabet City,14540,0.0033701523638
+Yellow,5,Staten Island,Arden Heights,0,0
+Yellow,6,Staten Island,Arrochar/Fort Wadsworth,120,2.78141873216e-05
+Yellow,7,Queens,Astoria,10999,0.00254940205292
+Yellow,8,Queens,Astoria Park,107,2.48009836951e-05
+Yellow,9,Queens,Auburndale,222,5.1456246545e-05
+Yellow,10,Queens,Baisley Park,2393,0.000554661252172
+Yellow,11,Brooklyn,Bath Beach,369,8.55286260139e-05
+Yellow,12,Manhattan,Battery Park,1919,0.000444795212251
+Yellow,13,Manhattan,Battery Park City,29163,0.00675954287383
+Yellow,14,Brooklyn,Bay Ridge,2241,0.000519429948231
+Yellow,15,Queens,Bay Terrace/Fort Totten,186,4.31119903485e-05
+Yellow,16,Queens,Bayside,398,9.225038795e-05
+Yellow,17,Brooklyn,Bedford,5522,0.00127991618658
+Yellow,18,Bronx,Bedford Park,966,0.000223904207939
+Yellow,19,Queens,Bellerose,546,0.000126554552313
+Yellow,20,Bronx,Belmont,568,0.000131653819989
+Yellow,21,Brooklyn,Bensonhurst East,701,0.000162481210937
+Yellow,22,Brooklyn,Bensonhurst West,1071,0.000248241621845
+Yellow,23,Staten Island,Bloomfield/Emerson Hill,34,7.88068640779e-06
+Yellow,24,Manhattan,Bloomingdale,11728,0.0027183732409
+Yellow,25,Brooklyn,Boerum Hill,6109,0.00141597391956
+Yellow,26,Brooklyn,Borough Park,1428,0.000330988829127
+Yellow,27,Queens,Breezy Point/Fort Tilden/Riis Beach,76,1.76156519703e-05
+Yellow,28,Queens,Briarwood/Jamaica Hills,1536,0.000356021597716
+Yellow,29,Brooklyn,Brighton Beach,674,0.00015622301879
+Yellow,30,Queens,Broad Channel,26,6.02640725301e-06
+Yellow,31,Bronx,Bronx Park,181,4.19530658767e-05
+Yellow,32,Bronx,Bronxdale,599,0.000138839151714
+Yellow,33,Brooklyn,Brooklyn Heights,6563,0.0015212042616
+Yellow,34,Brooklyn,Brooklyn Navy Yard,828,0.000191917892519
+Yellow,35,Brooklyn,Brownsville,2908,0.00067403047276
+Yellow,36,Brooklyn,Bushwick North,5371,0.00124491666754
+Yellow,37,Brooklyn,Bushwick South,8037,0.00186285519586
+Yellow,38,Queens,Cambria Heights,467,0.00010824354566
+Yellow,39,Brooklyn,Canarsie,3651,0.00084624664926
+Yellow,40,Brooklyn,Carroll Gardens,2001,0.000463801573588
+Yellow,41,Manhattan,Central Harlem,20793,0.00481950330815
+Yellow,42,Manhattan,Central Harlem North,14125,0.00327396163265
+Yellow,43,Manhattan,Central Park,55804,0.0129345242441
+Yellow,44,Staten Island,Charleston/Tottenville,8,1.85427915477e-06
+Yellow,45,Manhattan,Chinatown,9787,0.00226847876097
+Yellow,46,Bronx,City Island,84,1.94699311251e-05
+Yellow,47,Bronx,Claremont/Bathgate,757,0.00017546116502
+Yellow,48,Manhattan,Clinton East,104919,0.02431863933
+Yellow,49,Brooklyn,Clinton Hill,4571,0.00105948875206
+Yellow,50,Manhattan,Clinton West,33014,0.00765214650196
+Yellow,51,Bronx,Co-Op City,1250,0.000289731117933
+Yellow,52,Brooklyn,Cobble Hill,1907,0.000442013793519
+Yellow,53,Queens,College Point,446,0.000103376062879
+Yellow,54,Brooklyn,Columbia Street,586,0.000135825948087
+Yellow,55,Brooklyn,Coney Island,1416,0.000328207410395
+Yellow,56,Queens,Corona,1560,0.000361584435181
+Yellow,57,Queens,Corona,104,2.41056290121e-05
+Yellow,58,Bronx,Country Club,59,1.36753087665e-05
+Yellow,59,Bronx,Crotona Park,28,6.48997704171e-06
+Yellow,60,Bronx,Crotona Park East,626,0.000145097343861
+Yellow,61,Brooklyn,Crown Heights North,8937,0.00207146160078
+Yellow,62,Brooklyn,Crown Heights South,2495,0.000578303311395
+Yellow,63,Brooklyn,Cypress Hills,1773,0.000410954617677
+Yellow,64,Queens,Douglaston,185,4.28802054541e-05
+Yellow,65,Brooklyn,Downtown Brooklyn/MetroTech,6878,0.00159421650332
+Yellow,66,Brooklyn,DUMBO/Vinegar Hill,6599,0.00152954851779
+Yellow,67,Brooklyn,Dyker Heights,605,0.00014022986108
+Yellow,68,Manhattan,East Chelsea,110399,0.025588820551
+Yellow,69,Bronx,East Concourse/Concourse Village,1576,0.00036529299349
+Yellow,70,Queens,East Elmhurst,12911,0.00299257477091
+Yellow,71,Brooklyn,East Flatbush/Farragut,2630,0.000609594272132
+Yellow,72,Brooklyn,East Flatbush/Remsen Village,2866,0.000664295507198
+Yellow,73,Queens,East Flushing,199,4.6125193975e-05
+Yellow,74,Manhattan,East Harlem North,18539,0.00429706015629
+Yellow,75,Manhattan,East Harlem South,32089,0.00743774547469
+Yellow,76,Brooklyn,East New York,5639,0.00130703501922
+Yellow,77,Brooklyn,East New York/Pennsylvania Avenue,1522,0.000352776609196
+Yellow,78,Bronx,East Tremont,1017,0.000235725237551
+Yellow,79,Manhattan,East Village,111515,0.0258474924931
+Yellow,80,Brooklyn,East Williamsburg,7301,0.00169226151362
+Yellow,81,Bronx,Eastchester,718,0.000166421554141
+Yellow,82,Queens,Elmhurst,3863,0.000895385046861
+Yellow,83,Queens,Elmhurst/Maspeth,1681,0.000389630407397
+Yellow,84,Staten Island,Eltingville/Annadale/Prince's Bay,3,6.9535468304e-07
+Yellow,85,Brooklyn,Erasmus,2158,0.000500191802
+Yellow,86,Queens,Far Rockaway,672,0.000155759449001
+Yellow,87,Manhattan,Financial District North,33654,0.00780048883434
+Yellow,88,Manhattan,Financial District South,15869,0.00367819448839
+Yellow,89,Brooklyn,Flatbush/Ditmas Park,5010,0.00116124232068
+Yellow,90,Manhattan,Flatiron,65323,0.0151408846534
+Yellow,91,Brooklyn,Flatlands,2720,0.000630454912623
+Yellow,92,Queens,Flushing,1618,0.000375027959053
+Yellow,93,Queens,Flushing Meadows-Corona Park,1747,0.000404928210424
+Yellow,94,Bronx,Fordham South,497,0.00011519709249
+Yellow,95,Queens,Forest Hills,3284,0.000761181593034
+Yellow,96,Queens,Forest Park/Highland Park,120,2.78141873216e-05
+Yellow,97,Brooklyn,Fort Greene,6386,0.0014801783353
+Yellow,98,Queens,Fresh Meadows,275,6.37408459453e-05
+Yellow,99,Staten Island,Freshkills Park,0,0
+Yellow,100,Manhattan,Garment District,59730,0.0138445117393
+Yellow,101,Queens,Glen Oaks,296,6.86083287266e-05
+Yellow,102,Queens,Glendale,964,0.00022344063815
+Yellow,103,Manhattan,Governor's Island/Ellis Island/Liberty Island,0,0
+Yellow,104,Manhattan,Governor's Island/Ellis Island/Liberty Island,0,0
+Yellow,105,Manhattan,Governor's Island/Ellis Island/Liberty Island,0,0
+Yellow,106,Brooklyn,Gowanus,1722,0.000399133588065
+Yellow,107,Manhattan,Gramercy,80251,0.0186009695562
+Yellow,108,Brooklyn,Gravesend,525,0.000121687069532
+Yellow,109,Staten Island,Great Kills,10,2.31784894347e-06
+Yellow,110,Staten Island,Great Kills Park,0,0
+Yellow,111,Brooklyn,Green-Wood Cemetery,24,5.56283746432e-06
+Yellow,112,Brooklyn,Greenpoint,7863,0.00182252462425
+Yellow,113,Manhattan,Greenwich Village North,58176,0.0134843180135
+Yellow,114,Manhattan,Greenwich Village South,59957,0.0138971269103
+Yellow,115,Staten Island,Grymes Hill/Clifton,46,1.06621051399e-05
+Yellow,116,Manhattan,Hamilton Heights,9312,0.00215838093616
+Yellow,117,Queens,Hammels/Arverne,670,0.000155295879212
+Yellow,118,Staten Island,Heartland Village/Todt Hill,29,6.72176193605e-06
+Yellow,119,Bronx,Highbridge,990,0.000229467045403
+Yellow,120,Manhattan,Highbridge Park,99,2.29467045403e-05
+Yellow,121,Queens,Hillcrest/Pomonok,860,0.000199335009138
+Yellow,122,Queens,Hollis,555,0.000128640616362
+Yellow,123,Brooklyn,Homecrest,894,0.000207215695546
+Yellow,124,Queens,Howard Beach,668,0.000154832309424
+Yellow,125,Manhattan,Hudson Sq,22054,0.00511178405992
+Yellow,126,Bronx,Hunts Point,848,0.000196553590406
+Yellow,127,Manhattan,Inwood,2200,0.000509926767563
+Yellow,128,Manhattan,Inwood Hill Park,167,3.87080773559e-05
+Yellow,129,Queens,Jackson Heights,5992,0.00138885508693
+Yellow,130,Queens,Jamaica,5744,0.00133137243313
+Yellow,131,Queens,Jamaica Estates,773,0.00017916972333
+Yellow,132,Queens,JFK Airport,187466,0.0434517870036
+Yellow,133,Brooklyn,Kensington,1357,0.000314532101628
+Yellow,134,Queens,Kew Gardens,1479,0.000342809858739
+Yellow,135,Queens,Kew Gardens Hills,680,0.000157613728156
+Yellow,136,Bronx,Kingsbridge Heights,686,0.000159004437522
+Yellow,137,Manhattan,Kips Bay,46397,0.010754123743
+Yellow,138,Queens,LaGuardia Airport,115947,0.0268747631448
+Yellow,139,Queens,Laurelton,607,0.000140693430868
+Yellow,140,Manhattan,Lenox Hill East,77343,0.0179269390835
+Yellow,141,Manhattan,Lenox Hill West,87791,0.0203486276596
+Yellow,142,Manhattan,Lincoln Square East,115457,0.0267611885466
+Yellow,143,Manhattan,Lincoln Square West,47313,0.0109664387062
+Yellow,144,Manhattan,Little Italy/NoLiTa,48382,0.0112142167583
+Yellow,145,Queens,Long Island City/Hunters Point,11429,0.00264906955749
+Yellow,146,Queens,Long Island City/Queens Plaza,4958,0.00114918950617
+Yellow,147,Bronx,Longwood,615,0.000142547710023
+Yellow,148,Manhattan,Lower East Side,55681,0.0129060147021
+Yellow,149,Brooklyn,Madison,693,0.000160626931782
+Yellow,150,Brooklyn,Manhattan Beach,379,8.78464749574e-05
+Yellow,151,Manhattan,Manhattan Valley,33175,0.00768946386995
+Yellow,152,Manhattan,Manhattanville,5697,0.00132047854309
+Yellow,153,Manhattan,Marble Hill,221,5.12244616506e-05
+Yellow,154,Brooklyn,Marine Park/Floyd Bennett Field,108,2.50327685894e-05
+Yellow,155,Brooklyn,Marine Park/Mill Basin,1131,0.000262148715506
+Yellow,156,Staten Island,Mariners Harbor,21,4.86748278128e-06
+Yellow,157,Queens,Maspeth,2538,0.000588270061852
+Yellow,158,Manhattan,Meatpacking/West Village West,46314,0.0107348855968
+Yellow,159,Bronx,Melrose South,1607,0.000372478325215
+Yellow,160,Queens,Middle Village,1077,0.000249632331211
+Yellow,161,Manhattan,Midtown Center,178638,0.0414055899563
+Yellow,162,Manhattan,Midtown East,129938,0.0301176656016
+Yellow,163,Manhattan,Midtown North,105704,0.024500590472
+Yellow,164,Manhattan,Midtown South,90733,0.0210305388188
+Yellow,165,Brooklyn,Midwood,1225,0.000283936495575
+Yellow,166,Manhattan,Morningside Heights,21685,0.00502625543391
+Yellow,167,Bronx,Morrisania/Melrose,1101,0.000255195168676
+Yellow,168,Bronx,Mott Haven/Port Morris,3562,0.000825617793663
+Yellow,169,Bronx,Mount Hope,1131,0.000262148715506
+Yellow,170,Manhattan,Murray Hill,115489,0.0267686056632
+Yellow,171,Queens,Murray Hill-Queens,433,0.000100362859252
+Yellow,172,Staten Island,New Dorp/Midland Beach,24,5.56283746432e-06
+Yellow,173,Queens,North Corona,932,0.000216023521531
+Yellow,174,Bronx,Norwood,780,0.00018079221759
+Yellow,175,Queens,Oakland Gardens,276,6.39726308397e-05
+Yellow,176,Staten Island,Oakwood,10,2.31784894347e-06
+Yellow,177,Brooklyn,Ocean Hill,3058,0.000708798206912
+Yellow,178,Brooklyn,Ocean Parkway South,318,7.37075964022e-05
+Yellow,179,Queens,Old Astoria,3963,0.000918563536296
+Yellow,180,Queens,Ozone Park,808,0.000187282194632
+Yellow,181,Brooklyn,Park Slope,6487,0.00150358860963
+Yellow,182,Bronx,Parkchester,1095,0.00025380445931
+Yellow,183,Bronx,Pelham Bay,267,6.18865667906e-05
+Yellow,184,Bronx,Pelham Bay Park,101,2.3410274329e-05
+Yellow,185,Bronx,Pelham Parkway,558,0.000129335971045
+Yellow,186,Manhattan,Penn Station/Madison Sq West,129310,0.029972104688
+Yellow,187,Staten Island,Port Richmond,5,1.15892447173e-06
+Yellow,188,Brooklyn,Prospect-Lefferts Gardens,5221,0.00121014893338
+Yellow,189,Brooklyn,Prospect Heights,2519,0.000583866148859
+Yellow,190,Brooklyn,Prospect Park,488,0.000113111028441
+Yellow,191,Queens,Queens Village,1193,0.000276519378956
+Yellow,192,Queens,Queensboro Hill,400,9.27139577387e-05
+Yellow,193,Queens,Queensbridge/Ravenswood,3789,0.000878232964679
+Yellow,194,Manhattan,Randalls Island,254,5.8873363164e-05
+Yellow,195,Brooklyn,Red Hook,2044,0.000473768324045
+Yellow,196,Queens,Rego Park,1535,0.000355789812822
+Yellow,197,Queens,Richmond Hill,3820,0.000885418296404
+Yellow,198,Queens,Ridgewood,2988,0.000692573264308
+Yellow,199,Bronx,Rikers Island,1,2.31784894347e-07
+Yellow,200,Bronx,Riverdale/North Riverdale/Fieldston,493,0.000114269952913
+Yellow,201,Queens,Rockaway Park,302,6.99990380927e-05
+Yellow,202,Manhattan,Roosevelt Island,587,0.000136057732981
+Yellow,203,Queens,Rosedale,442,0.000102448923301
+Yellow,204,Staten Island,Rossville/Woodrow,4,9.27139577387e-07
+Yellow,205,Queens,Saint Albans,1462,0.000338869515535
+Yellow,206,Staten Island,Saint George/New Brighton,14,3.24498852085e-06
+Yellow,207,Queens,Saint Michaels Cemetery/Woodside,399,9.24821728443e-05
+Yellow,208,Bronx,Schuylerville/Edgewater Park,813,0.000188441119104
+Yellow,209,Manhattan,Seaport,10980,0.00254499813993
+Yellow,210,Brooklyn,Sheepshead Bay,1033,0.00023943379586
+Yellow,211,Manhattan,SoHo,36225,0.00839640779771
+Yellow,212,Bronx,Soundview/Bruckner,868,0.000201189288293
+Yellow,213,Bronx,Soundview/Castle Hill,1338,0.000310128188636
+Yellow,214,Staten Island,South Beach/Dongan Hills,48,1.11256749286e-05
+Yellow,215,Queens,South Jamaica,1867,0.000432742397745
+Yellow,216,Queens,South Ozone Park,4195,0.000972337631784
+Yellow,217,Brooklyn,South Williamsburg,990,0.000229467045403
+Yellow,218,Queens,Springfield Gardens North,1021,0.000236652377128
+Yellow,219,Queens,Springfield Gardens South,1144,0.000265161919133
+Yellow,220,Bronx,Spuyten Duyvil/Kingsbridge,838,0.000194235741462
+Yellow,221,Staten Island,Stapleton,66,1.52978030269e-05
+Yellow,222,Brooklyn,Starrett City,852,0.000197480729983
+Yellow,223,Queens,Steinway,3531,0.000818432461938
+Yellow,224,Manhattan,Stuy Town/Peter Cooper Village,9896,0.00229374331445
+Yellow,225,Brooklyn,Stuyvesant Heights,5557,0.00128802865788
+Yellow,226,Queens,Sunnyside,9766,0.00226361127819
+Yellow,227,Brooklyn,Sunset Park East,930,0.000215559951742
+Yellow,228,Brooklyn,Sunset Park West,3053,0.00070763928244
+Yellow,229,Manhattan,Sutton Place/Turtle Bay North,66094,0.0153195908069
+Yellow,230,Manhattan,Times Sq/Theatre District,129722,0.0300676000644
+Yellow,231,Manhattan,TriBeCa/Civic Center,61894,0.0143460942507
+Yellow,232,Manhattan,Two Bridges/Seward Park,13193,0.00305793811112
+Yellow,233,Manhattan,UN/Turtle Bay South,48050,0.0111372641734
+Yellow,234,Manhattan,Union Sq,112581,0.0260945751904
+Yellow,235,Bronx,University Heights/Morris Heights,1032,0.000239202010966
+Yellow,236,Manhattan,Upper East Side North,156673,0.036314434752
+Yellow,237,Manhattan,Upper East Side South,180070,0.041737505925
+Yellow,238,Manhattan,Upper West Side North,72260,0.0167487764655
+Yellow,239,Manhattan,Upper West Side South,103603,0.024013610409
+Yellow,240,Bronx,Van Cortlandt Park,141,3.26816701029e-05
+Yellow,241,Bronx,Van Cortlandt Village,795,0.000184268991006
+Yellow,242,Bronx,Van Nest/Morris Park,811,0.000187977549315
+Yellow,243,Manhattan,Washington Heights North,4963,0.00115034843064
+Yellow,244,Manhattan,Washington Heights South,10644,0.00246711841543
+Yellow,245,Staten Island,West Brighton,15,3.4767734152e-06
+Yellow,246,Manhattan,West Chelsea/Hudson Yards,78611,0.0182208423295
+Yellow,247,Bronx,West Concourse,2263,0.000524529215906
+Yellow,248,Bronx,West Farms/Bronx River,816,0.000189136473787
+Yellow,249,Manhattan,West Village,92833,0.0215172870969
+Yellow,250,Bronx,Westchester Village/Unionport,843,0.000195394665934
+Yellow,251,Staten Island,Westerleigh,22,5.09926767563e-06
+Yellow,252,Queens,Whitestone,396,9.17868181613e-05
+Yellow,253,Queens,Willets Point,54,1.25163842947e-05
+Yellow,254,Bronx,Williamsbridge/Olinville,1317,0.000305260705855
+Yellow,255,Brooklyn,Williamsburg (North Side),10653,0.00246920447947
+Yellow,256,Brooklyn,Williamsburg (South Side),8962,0.00207725622313
+Yellow,257,Brooklyn,Windsor Terrace,864,0.000200262148716
+Yellow,258,Queens,Woodhaven,1734,0.000401915006797
+Yellow,259,Bronx,Woodlawn/Wakefield,670,0.000155295879212
+Yellow,260,Queens,Woodside,4252,0.000985549370762
+Yellow,261,Manhattan,World Trade Center,23191,0.00537532348479
+Yellow,262,Manhattan,Yorkville East,54026,0.012522410702
+Yellow,263,Manhattan,Yorkville West,73374,0.0170069848378

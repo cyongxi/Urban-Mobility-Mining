@@ -1,0 +1,20 @@
+{
+  "chosen_k": 3,
+  "k_selection_rule": "highest silhouette with min cluster size >=5",
+  "pca_n_components": 23,
+  "pca_cumulative_variance": 0.9005967340434095,
+  "n_zones_clustered": 250,
+  "n_zones_unassigned": 13,
+  "min_pickups": 100,
+  "seed_ari_pairwise_mean": 0.9634544328531822,
+  "seed_ari_pairwise_min": 0.9460246137637708,
+  "raw_vs_normalized_ari": 0.10457208577452116,
+  "interpretation": "Full-year descriptive 2025 clusters, NOT time-safe 2025 forecasts",
+  "rq1_rq2_agreement": {
+    "n_shared_zones": 250,
+    "ARI": 0.1919876706594077,
+    "AMI": 0.22100160433608748
+  },
+  "passes_min_cluster_size_5": true,
+  "sensitivity_threshold": 100
+}

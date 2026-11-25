@@ -1,0 +1,10 @@
+zone_id,cluster_id,distance_to_centroid,Borough,Zone
+76,0,0.008513471771460904,Brooklyn,East New York
+89,0,0.009834365893811875,Brooklyn,Flatbush/Ditmas Park
+169,0,0.0112753349336746,Bronx,Mount Hope
+65,1,0.01181285496771981,Brooklyn,Downtown Brooklyn/MetroTech
+137,1,0.012681603939801184,Manhattan,Kips Bay
+50,1,0.014375261489103503,Manhattan,Clinton West
+256,2,0.013466502442465863,Brooklyn,Williamsburg (South Side)
+112,2,0.02535137761187514,Brooklyn,Greenpoint
+37,2,0.026116201341308987,Brooklyn,Bushwick South
